@@ -23,7 +23,7 @@ const entry = getEntries();
 
 module.exports = {
 	...config,
-	entry,
+	entry: { ...entry, tailwind: "./src/tailwind.css" },
 	plugins: [
 		...config.plugins,
 		new CopyPlugin({
