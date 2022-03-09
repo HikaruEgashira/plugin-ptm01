@@ -14,23 +14,15 @@ use RecursiveIteratorIterator;
 
 class Bootstrap {
 
-	/**
-	 * constructor
-	 */
 	public function __construct() {
 		add_action( 'plugins_loaded', [ $this, '_bootstrap' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, '_register_style' ] );
 	}
 
-	/**
-	 * bootstrap
-	 */
 	public function _bootstrap() {
 		add_action( 'init', [ $this, '_register_blocks' ] );
 	}
 
-	/**
-	 * Register blocks.
-	 */
 	public function _register_blocks() {
 		$iterator = new RecursiveDirectoryIterator( BLOCKS_DIR_PATH . '/build/blocks', FilesystemIterator::SKIP_DOTS );
 		$iterator = new RecursiveIteratorIterator( $iterator );
@@ -45,6 +37,16 @@ class Bootstrap {
 
 			include_once( realpath( $file->getPathname() ) );
 		}
+	}
+
+	public function _register_style() {
+		wp_register_style(
+			'tailwind',
+			BLOCKS_DIR_URL . '/build/tailwind.css',
+			array(),
+			NULL
+		);
+		wp_enqueue_style('tailwind');
 	}
 }
 

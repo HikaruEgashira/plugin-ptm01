@@ -1,7 +1,6 @@
 import type { BlockConfiguration } from "@wordpress/blocks";
 
 import { register } from "../helper";
-import "../tailwind.css";
 
 import edit from "./edit";
 import save from "./save";
