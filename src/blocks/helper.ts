@@ -2,7 +2,7 @@ import { registerBlockType } from "@wordpress/blocks";
 import type { BlockConfiguration } from "@wordpress/blocks";
 // import { __ } from "@wordpress/i18n";
 
-const namespace = "hikaeptm";
+const namespace = "ptm01";
 
 export const register = <T>(conf: BlockConfiguration<T>) => {
 	registerBlockType(`${namespace}/${conf.title}`, {

@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     hikaeptm
+ * Plugin Name:     ptm01
  * Description:     create by hikae
  * Version:         0.1.0
  * Author:          hikae
