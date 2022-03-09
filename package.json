@@ -32,7 +32,7 @@
 		"start": "wp-scripts start",
 		"test:e2e": "wp-scripts test-e2e",
 		"test:unit": "wp-scripts test-unit-js",
-		"wp-env": "wp-env start"
+		"wp-env": "wp-env"
 	},
 	"browserslist": {
 		"production": [
