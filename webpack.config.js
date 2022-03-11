@@ -24,6 +24,13 @@ const entry = getEntries();
 module.exports = {
 	...config,
 	entry: { ...entry, tailwind: "./src/tailwind.css" },
+	resolve: {
+		...config.resolve,
+		alias: {
+			...config.resolve.alias,
+			"~": path.resolve(__dirname, "./src"),
+		},
+	},
 	plugins: [
 		...config.plugins,
 		new CopyPlugin({

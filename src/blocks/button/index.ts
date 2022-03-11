@@ -1,5 +1,5 @@
 import type { BlockConfiguration } from "@wordpress/blocks";
-
+import "../../tailwind.css";
 import { register } from "../helper";
 
 import edit from "./edit";
@@ -10,9 +10,9 @@ export type Attribute = {
 };
 
 const config: BlockConfiguration<Attribute> = {
-	title: "h2",
+	title: "button",
 	description: "heading 1",
-	category: "lp",
+	category: "widgets",
 	icon: "smiley",
 	supports: {},
 	attributes: {

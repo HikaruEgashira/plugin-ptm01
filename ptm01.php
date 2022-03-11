@@ -13,14 +13,13 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 
 class Bootstrap {
-
 	public function __construct() {
 		add_action( 'plugins_loaded', [ $this, '_bootstrap' ] );
-		add_action( 'wp_enqueue_scripts', [ $this, '_register_style' ] );
 	}
 
 	public function _bootstrap() {
 		add_action( 'init', [ $this, '_register_blocks' ] );
+		// add_action( 'wp_enqueue_scripts', [ $this, '_register_style' ] );
 	}
 
 	public function _register_blocks() {

@@ -6,7 +6,11 @@
 		"module": "commonjs",
 		"strict": true,
 		"allowSyntheticDefaultImports": true,
-		"noImplicitAny": false
+		"noImplicitAny": false,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"]
+		}
 	},
 	"include": ["src"]
 }
