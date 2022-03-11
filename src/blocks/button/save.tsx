@@ -1,15 +1,16 @@
 import * as React from "react";
-import type { BlockSaveProps } from "@wordpress/blocks";
-import type { Attribute } from ".";
 import { RichText, useBlockProps } from "@wordpress/block-editor";
+import type { BlockSaveProps } from "@wordpress/blocks";
+import { Button } from "~/stories/Button";
+import type { Attribute } from ".";
 
 const Save: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 	const blockProps = useBlockProps.save();
 
 	return (
-		<div {...blockProps}>
-			<RichText.Content tagName="div" value={attributes.title} />
-		</div>
+		<Button outline={Boolean(attributes.outline)} {...blockProps}>
+			<RichText.Content tagName="span" value={attributes.title} />
+		</Button>
 	);
 };
 

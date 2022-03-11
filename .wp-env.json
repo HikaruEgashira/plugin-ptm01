@@ -1,3 +1,4 @@
 {
-	"plugins": ["."]
+	"plugins": ["."],
+	"themes": ["https://github.com/yhira/cocoon/archive/refs/tags/2.4.2.4.zip"]
 }

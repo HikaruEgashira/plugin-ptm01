@@ -7,6 +7,7 @@ import save from "./save";
 
 export type Attribute = {
 	title: string;
+	outline: boolean;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -19,10 +20,15 @@ const config: BlockConfiguration<Attribute> = {
 		title: {
 			type: "string",
 		},
+		outline: {
+			type: "boolean",
+			default: false,
+		},
 	},
 	example: {
 		attributes: {
 			title: "Bonjour, monde",
+			outline: true,
 		},
 	},
 	edit,
