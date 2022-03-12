@@ -8,6 +8,7 @@ import save from "./save";
 export type Attribute = {
 	title: string;
 	outline: boolean;
+	href: string;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -24,13 +25,11 @@ const config: BlockConfiguration<Attribute> = {
 			type: "boolean",
 			default: false,
 		},
-	},
-	example: {
-		attributes: {
-			title: "Bonjour, monde",
-			outline: true,
+		href: {
+			type: "string",
 		},
 	},
+	example: {},
 	edit,
 	save,
 };

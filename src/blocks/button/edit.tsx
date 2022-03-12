@@ -6,7 +6,7 @@ import {
 	RichText,
 	useBlockProps,
 } from "@wordpress/block-editor";
-import { ToggleControl } from "@wordpress/components";
+import { TextControl, ToggleControl } from "@wordpress/components";
 import { Button } from "~/stories/Button";
 
 const Edit: React.FC<BlockEditProps<Attribute>> = ({
@@ -19,16 +19,19 @@ const Edit: React.FC<BlockEditProps<Attribute>> = ({
 	const setOutline = (newOutline: boolean) => {
 		setAttributes({ outline: newOutline });
 	};
+	const setHref = (newHref: string) => {
+		setAttributes({ href: newHref });
+	};
 
 	return (
 		<>
 			<InspectorControls key="setting">
 				<div className="p-4 grid gap-4">
 					<fieldset className="grid gap-2">
-						<legend className="blocks-base-control__label">
-							Outline(Not Supported)
-						</legend>
+						<legend className="blocks-base-control__label">Outline</legend>
 						<ToggleControl checked={attributes.outline} onChange={setOutline} />
+						<legend className="blocks-base-control__label">Link</legend>
+						<TextControl value={attributes.href} onChange={setHref} />
 					</fieldset>
 				</div>
 			</InspectorControls>

@@ -2,9 +2,16 @@ import type { BlockConfiguration } from "@wordpress/blocks";
 import "../../tailwind.css";
 import { register } from "../helper";
 
-import view from "./view";
+import save from "./save";
+import edit from "./edit";
 
-export type Attribute = {};
+export type Attribute = {
+	title: string;
+	leftButtonLabel: string;
+	leftButtonUrl: string;
+	rightButtonLabel: string;
+	rightButtonUrl: string;
+};
 
 const config: BlockConfiguration<Attribute> = {
 	title: "mainvisual",
@@ -15,10 +22,26 @@ const config: BlockConfiguration<Attribute> = {
 		multiple: false,
 		reusable: false,
 	},
-	attributes: {},
+	attributes: {
+		title: {
+			type: "string",
+		},
+		leftButtonLabel: {
+			type: "string",
+		},
+		leftButtonUrl: {
+			type: "string",
+		},
+		rightButtonLabel: {
+			type: "string",
+		},
+		rightButtonUrl: {
+			type: "string",
+		},
+	},
 	example: {},
-	edit: view,
-	save: view,
+	edit,
+	save,
 };
 
 register(config);
