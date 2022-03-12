@@ -7,7 +7,7 @@
 wp_register_script(
 	'ptm01-block/questions',
 	BLOCKS_DIR_URL . '/build/blocks/questions/index.js',
-	array('react', 'wp-block-editor', 'wp-blocks', 'wp-element'),
+	array('react', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-element'),
 	filemtime( BLOCKS_DIR_PATH . '/build/blocks/questions/index.js' ),
 );
 
