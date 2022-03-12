@@ -1,7 +1,8 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import MainVisual, { StyledButton } from "./MainVisual";
+import MainVisual from "./MainVisual";
+import { ButtonLink } from "../Button";
 
 export default {
 	title: "Parts/MainVisual",
@@ -15,18 +16,18 @@ const Template: ComponentStory<typeof MainVisual> = (args) => (
 export const Basic = Template.bind({});
 Basic.args = {
 	title: (
-		<div>
+		<>
 			パフォーマンスに関する混沌とした情報を管理し「言語化・可視化」した新時代の教科書
-		</div>
+		</>
 	),
 	leftButton: (
-		<StyledButton
+		<ButtonLink
 			label={<>Performance Treasure Map とは??</>}
 			url="https://google.com"
 		/>
 	),
 	rightButton: (
-		<StyledButton
+		<ButtonLink
 			label={<>オンラインストア</>}
 			url="https://google.com"
 			outline

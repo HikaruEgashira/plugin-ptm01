@@ -21,7 +21,7 @@ jobs:
         with:
           version: 6.31.0
       - run: pnpm install --no-frozen-lockfile && pnpm build && pnpm plugin-zip
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: plugin
           path: ptm01.zip

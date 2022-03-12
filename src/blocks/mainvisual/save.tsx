@@ -1,16 +1,17 @@
 import React from "react";
-import MainVisual, { StyledButton } from "~/stories/parts/MainVisual";
+import MainVisual from "~/stories/parts/MainVisual";
 import type { BlockSaveProps } from "@wordpress/blocks";
 import type { Attribute } from ".";
 import "~/stories/parts/mainvisual.css";
 import { RichText } from "@wordpress/block-editor";
+import { ButtonLink } from "~/stories/Button";
 
 const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 	return (
 		<MainVisual
 			title={<RichText.Content tagName="span" value={attributes.title} />}
 			leftButton={
-				<StyledButton
+				<ButtonLink
 					label={
 						<RichText.Content
 							tagName="span"
@@ -21,7 +22,7 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 				/>
 			}
 			rightButton={
-				<StyledButton
+				<ButtonLink
 					label={
 						<RichText.Content
 							tagName="span"

@@ -14,11 +14,11 @@ export const Button: React.FC<ButtonProps> = ({
 	return (
 		<div
 			className={cn(
-				"py-3 px-6 inline-flex justify-center items-center min-w-[10rem] font-bold rounded-full",
+				"py-3 px-6 inline-flex justify-center items-center min-w-[10rem] rounded-full",
 				{
 					"border-2": outline,
-					"border-[#192E5F]": outline,
-					"bg-[#192E5F]": !outline,
+					"border-[#19585F]": outline,
+					"bg-[#19585F]": !outline,
 					"text-white": !outline,
 				},
 				className
@@ -28,3 +28,15 @@ export const Button: React.FC<ButtonProps> = ({
 		</div>
 	);
 };
+
+export const ButtonLink: React.FC<{
+	label: JSX.Element;
+	url: string;
+	outline?: boolean;
+}> = ({ label, url, outline = false }) => (
+	<a href={url}>
+		<Button outline={outline} className="hover:shadow-2xl transition-all">
+			{label}
+		</Button>
+	</a>
+);

@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "~/stories/Button";
 import "./mainvisual.css";
 
 export type Attribute = {
@@ -8,21 +7,9 @@ export type Attribute = {
 	rightButton: JSX.Element;
 };
 
-export const StyledButton: React.FC<{
-	label: JSX.Element;
-	url: string;
-	outline?: boolean;
-}> = ({ label, url, outline = false }) => (
-	<a href={url}>
-		<Button outline={outline} className="hover:shadow-2xl transition-all">
-			{label}
-		</Button>
-	</a>
-);
-
 const View: React.FC<Attribute> = ({ title, leftButton, rightButton }) => {
 	return (
-		<div className="bg-[#F3F4F8] p-4 md:p-14 flex flex-col gap-14">
+		<div className="bg-[#F3F7F8] p-4 md:p-14 flex flex-col gap-14">
 			<div className="mx-auto text-center font-bold text-3xl md:text-5xl max-w-4xl">
 				{title}
 			</div>
