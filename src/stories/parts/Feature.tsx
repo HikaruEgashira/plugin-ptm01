@@ -10,7 +10,7 @@ export type Attribute = {};
 const View: React.FC<Attribute> = () => {
 	return (
 		<>
-			<div className="lg:p-10 max-w-5xl mx-auto">
+			<div className="py-10 lg:px-10 max-w-5xl mx-auto">
 				<div className="font-bold text-xl text-center pb-8">
 					<div>Original K-Mapの強み</div>
 				</div>

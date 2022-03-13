@@ -10,14 +10,13 @@ export type Attribute = {};
 const View: React.FC<Attribute> = () => {
 	return (
 		<>
-			<div className="bg-white lg:p-10 max-w-5xl mx-auto">
+			<div className="bg-white py-10 lg:px-10 max-w-5xl mx-auto">
 				<div className="font-bold text-xl text-center pb-4">
 					<div>こんなお悩みを抱えたトレーナーへ</div>
 				</div>
 				<div className="flex flex-col">
-					<div className="flex items-center lg:items-start flex-col lg:flex-row w-full">
+					<div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2">
 						<Problem
-							className="w-full max-w-sm lg:w-1/3"
 							title="課題1"
 							imageUrl="./undraw_professor_re_mj1s.svg"
 							description={
@@ -28,27 +27,17 @@ const View: React.FC<Attribute> = () => {
 							}
 						/>
 						<Problem
-							className="w-full max-w-sm lg:w-1/3"
 							title="課題2"
 							imageUrl="./undraw_personal_trainer_ote3.svg"
 							description={
 								<>
-									からだの評価はできたが、
-									<Accent>何の種目をして良いか分からない…</Accent>
+									からだの評価はできたが、目的を達成するための
+									<Accent>トレーニングプランが組めない...</Accent>
 								</>
 							}
 						/>
 						<Problem
-							className="w-full max-w-sm lg:w-1/3"
 							title="課題3"
-							imageUrl="./undraw_stepping_up_g6oo.svg"
-							description={<>段階的なトレーニングの構築が苦手…</>}
-						/>
-					</div>
-					<div className="flex items-center lg:items-start flex-col lg:flex-row w-full place-content-center">
-						<Problem
-							className="w-full max-w-sm lg:w-1/3"
-							title="課題4"
 							imageUrl="./undraw_people_re_8spw.svg"
 							description={
 								<>
@@ -58,8 +47,7 @@ const View: React.FC<Attribute> = () => {
 							}
 						/>
 						<Problem
-							className="w-full max-w-sm lg:w-1/3"
-							title="課題5"
+							title="課題4"
 							imageUrl="./undraw_spreadsheet_re_cn18.svg"
 							description={<>これまで学んだ知識や技術の整理ができない…</>}
 						/>
