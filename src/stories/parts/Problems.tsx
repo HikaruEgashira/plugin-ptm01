@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Problem } from "~/stories/Problem";
 
 const Accent: React.FC = ({ children }) => (
-	<span className="text-[#19585F]">{children}</span>
+	<span className="text-[#19585F] font-bold">{children}</span>
 );
 
 export type Attribute = {};
@@ -49,7 +49,11 @@ const View: React.FC<Attribute> = () => {
 						<Problem
 							title="課題4"
 							imageUrl="./undraw_spreadsheet_re_cn18.svg"
-							description={<>これまで学んだ知識や技術の整理ができない…</>}
+							description={
+								<>
+									これまで学んだ<Accent>知識や技術の整理</Accent>ができない…
+								</>
+							}
 						/>
 					</div>
 				</div>

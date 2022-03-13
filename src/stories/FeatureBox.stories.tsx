@@ -13,7 +13,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof FeatureBox> = (args) => (
-	<div className="w-72">
+	<div className="max-w-xs">
 		<FeatureBox {...args} />
 	</div>
 );
@@ -25,5 +25,5 @@ Basic.args = {
 	description: <>マップを作成する</>,
 	actionLabel: "マップを作成する",
 	actionUrl: "/map",
-	imageUrl: "https://picsum.photos/id/1/400/300",
+	imageUrl: "./undraw_people_re_8spw.svg",
 };
