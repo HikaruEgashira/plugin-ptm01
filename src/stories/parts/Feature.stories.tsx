@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Feature from "./Feature";
+import Feature, { Attribute } from "./Feature";
 
 export default {
 	title: "Parts/Feature",
@@ -12,5 +12,6 @@ const Template: ComponentStory<typeof Feature> = (args) => (
 	<Feature {...args} />
 );
 
+const props: Attribute = {};
 export const Basic = Template.bind({});
-Basic.args = {};
+Basic.args = props;

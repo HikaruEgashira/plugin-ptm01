@@ -11,27 +11,17 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 		<MainVisual
 			title={<RichText.Content tagName="span" value={attributes.title} />}
 			leftButton={
-				<ButtonLink
-					label={
-						<RichText.Content
-							tagName="span"
-							value={attributes.leftButtonLabel}
-						/>
-					}
-					url={attributes.leftButtonUrl}
-				/>
+				<ButtonLink url={attributes.leftButtonUrl}>
+					<RichText.Content tagName="span" value={attributes.leftButtonLabel} />
+				</ButtonLink>
 			}
 			rightButton={
-				<ButtonLink
-					label={
-						<RichText.Content
-							tagName="span"
-							value={attributes.rightButtonLabel}
-						/>
-					}
-					url={attributes.rightButtonUrl}
-					outline
-				/>
+				<ButtonLink url={attributes.rightButtonUrl} outline>
+					<RichText.Content
+						tagName="span"
+						value={attributes.rightButtonLabel}
+					/>
+				</ButtonLink>
 			}
 		/>
 	);

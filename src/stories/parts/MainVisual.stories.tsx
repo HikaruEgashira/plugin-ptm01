@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import MainVisual from "./MainVisual";
+import MainVisual, { Attribute } from "./MainVisual";
 import { ButtonLink } from "../Button";
 
 export default {
@@ -13,24 +13,22 @@ const Template: ComponentStory<typeof MainVisual> = (args) => (
 	<MainVisual {...args} />
 );
 
-export const Basic = Template.bind({});
-Basic.args = {
+export const props: Attribute = {
 	title: (
 		<>
 			パフォーマンスに関する混沌とした情報を管理し「言語化・可視化」した新時代の教科書
 		</>
 	),
 	leftButton: (
-		<ButtonLink
-			label={<>Performance Treasure Map とは??</>}
-			url="https://google.com"
-		/>
+		<ButtonLink rounded url="https://google.com">
+			Performance Treasure Map とは??
+		</ButtonLink>
 	),
 	rightButton: (
-		<ButtonLink
-			label={<>オンラインストア</>}
-			url="https://google.com"
-			outline
-		/>
+		<ButtonLink rounded url="https://google.com" outline>
+			オンラインストア
+		</ButtonLink>
 	),
 };
+export const Basic = Template.bind({});
+Basic.args = props;

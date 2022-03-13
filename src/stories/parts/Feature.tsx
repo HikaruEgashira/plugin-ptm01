@@ -10,15 +10,15 @@ export type Attribute = {};
 const View: React.FC<Attribute> = () => {
 	return (
 		<>
-			<div className="bg-white p-10 max-w-5xl mx-auto">
-				<div className="font-bold text-xl text-center pb-4">
+			<div className="lg:p-10 max-w-5xl mx-auto">
+				<div className="font-bold text-xl text-center pb-8">
 					<div>Original K-Mapの強み</div>
 				</div>
 				<div className="text-center font-bold">
 					<span className="text-red-500">＼</span> 驚異のリンク{" "}
 					<span className="text-red-500">／</span>
 				</div>
-				<div className="flex items-center lg:items-start flex-col lg:flex-row w-full my-10 gap-4">
+				<div className="flex items-center lg:items-start flex-col lg:flex-row w-full gap-4">
 					<FeatureBox
 						className="w-full max-w-sm lg:w-1/3"
 						title="マップ"
@@ -56,6 +56,13 @@ const View: React.FC<Attribute> = () => {
 						actionUrl="/exercise/1"
 					/>
 				</div>
+				<ul className="max-w-xl mx-auto my-10 text-lg grid gap-2">
+					<li>✅マップ x 動画 x ブログ解説がすべてリンクされています！！</li>
+					<li>✅大学教員・専門研究者と連携して作成しています！！</li>
+					<li>
+						✅英語対応（マップ・動画・ブログ）をしているので専門英語の勉強にもなります！！
+					</li>
+				</ul>
 			</div>
 		</>
 	);

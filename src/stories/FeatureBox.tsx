@@ -1,6 +1,6 @@
 import cn from "classnames";
 import React from "react";
-import { Button } from "./Button";
+import { ButtonLink } from "./Button";
 
 export type FeatureBoxProps = {
 	title: string;
@@ -21,12 +21,12 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 }) => {
 	return (
 		<div className={cn("flex flex-col items-center gap-4 p-4", className)}>
-			<div className="text-4xl font-bold">{title}</div>
+			<div className="text-3xl font-bold">{title}</div>
 			<img className="h-36 w-full" alt="featureimage" src={imageUrl} />
-			<div className="w-full text-left h-24">{description}</div>
-			<a href={actionUrl}>
-				<Button rounded={false}>{actionLabel}</Button>
-			</a>
+			<div className="w-full text-left h-24 overflow-y-auto">{description}</div>
+			<ButtonLink rounded={false} url={actionUrl}>
+				{actionLabel}
+			</ButtonLink>
 		</div>
 	);
 };

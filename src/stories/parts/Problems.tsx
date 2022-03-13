@@ -10,7 +10,7 @@ export type Attribute = {};
 const View: React.FC<Attribute> = () => {
 	return (
 		<>
-			<div className="bg-white p-10 max-w-5xl mx-auto">
+			<div className="bg-white lg:p-10 max-w-5xl mx-auto">
 				<div className="font-bold text-xl text-center pb-4">
 					<div>こんなお悩みを抱えたトレーナーへ</div>
 				</div>
@@ -66,15 +66,11 @@ const View: React.FC<Attribute> = () => {
 					</div>
 				</div>
 			</div>
-			<div className="my-10">
-				<div className="px-4 flex items-center justify-center text-2xl h-72 text-white bg-[#0591A0]">
+			<div className="mt-10">
+				<div className="px-4 flex items-center justify-center text-2xl h-64 text-white bg-[#0591A0]">
 					Performance Treasure Mapはこれらすべてを解決できます!!
 				</div>
-				<img
-					className="h-[36rem] min-h-48 w-full object-cover"
-					src="./map.png"
-					alt="map"
-				/>
+				<img className="h-96 w-full object-cover" src="./map.png" alt="map" />
 			</div>
 		</>
 	);
