@@ -25,3 +25,9 @@ Basic.args = {
 	),
 	imageUrl: "./undraw_professor_re_mj1s.svg",
 };
+
+export const Slim = Template.bind({});
+Slim.args = {
+	...Basic.args,
+	slim: true,
+};

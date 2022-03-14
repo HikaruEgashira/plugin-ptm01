@@ -26,6 +26,8 @@ export type Props = {
 
 	bottomTitle: JSX.Element;
 	bottomImageUrl: string;
+
+	slim?: boolean;
 };
 
 const View: React.FC<Props> = (props) => {
@@ -39,21 +41,25 @@ const View: React.FC<Props> = (props) => {
 							title={props.problemATitle}
 							imageUrl={props.problemAImageUrl}
 							description={props.problemADescription}
+							slim={props.slim}
 						/>
 						<Problem
 							title={props.problemBTitle}
 							imageUrl={props.problemBImageUrl}
 							description={props.problemBDescription}
+							slim={props.slim}
 						/>
 						<Problem
 							title={props.problemCTitle}
 							imageUrl={props.problemCImageUrl}
 							description={props.problemCDescription}
+							slim={props.slim}
 						/>
 						<Problem
 							title={props.problemDTitle}
 							imageUrl={props.problemDImageUrl}
 							description={props.problemDDescription}
+							slim={props.slim}
 						/>
 					</div>
 				</div>

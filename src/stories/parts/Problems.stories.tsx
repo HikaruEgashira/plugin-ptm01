@@ -55,3 +55,9 @@ export const props: Props = {
 };
 export const Basic = Template.bind({});
 Basic.args = props;
+
+export const Slim = Template.bind({});
+Slim.args = {
+	...Basic.args,
+	slim: true,
+};

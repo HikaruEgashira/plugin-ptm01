@@ -6,6 +6,7 @@ export type ProblemProps = {
 	imageUrl: string;
 	description: JSX.Element;
 	className?: string;
+	slim?: boolean;
 };
 
 export const Problem: React.FC<ProblemProps> = ({
@@ -13,6 +14,7 @@ export const Problem: React.FC<ProblemProps> = ({
 	imageUrl,
 	description,
 	className,
+	slim,
 }) => {
 	return (
 		<div className={cn("p-4 pt-8", className)}>
@@ -21,7 +23,9 @@ export const Problem: React.FC<ProblemProps> = ({
 					{title}
 				</div>
 				<img
-					className="w-full h-full p-2 object-contain"
+					className={cn("w-full h-full p-2 object-contain", {
+						"w-1/2 h-1/2": slim,
+					})}
 					alt="csv"
 					src={imageUrl}
 				/>
