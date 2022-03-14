@@ -36,11 +36,11 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							onChange={(value) => setAttributes({ problemCImageUrl: value })}
 						/>
 						<legend className="blocks-base-control__label">
-							problemCImageUrl
+							problemDImageUrl
 						</legend>
 						<TextControl
-							value={attributes.problemCImageUrl}
-							onChange={(value) => setAttributes({ problemCImageUrl: value })}
+							value={attributes.problemDImageUrl}
+							onChange={(value) => setAttributes({ problemDImageUrl: value })}
 						/>
 						<legend className="blocks-base-control__label">
 							bottomImageUrl
