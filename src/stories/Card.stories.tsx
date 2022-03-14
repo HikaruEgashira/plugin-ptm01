@@ -18,12 +18,12 @@ const Template: ComponentStory<typeof Card> = (args) => (
 export const Basic = Template.bind({});
 Basic.args = {
 	imageUrl: "./undraw_people_re_8spw.svg",
-	title: "PTM Community",
+	title: <>PTM Community</>,
 	description: (
 		<>
 			<div>K-Map購入者限定の</div>
 			<div>Facebookコミュニティ</div>
 		</>
 	),
-	bottomLabel: "無料",
+	bottomLabel: <>無料</>,
 };

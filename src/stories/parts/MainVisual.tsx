@@ -1,13 +1,13 @@
 import React from "react";
 import "./mainvisual.css";
 
-export type Attribute = {
+export type Props = {
 	title: JSX.Element;
 	leftButton: JSX.Element;
 	rightButton: JSX.Element;
 };
 
-const View: React.FC<Attribute> = ({ title, leftButton, rightButton }) => {
+const View: React.FC<Props> = ({ title, leftButton, rightButton }) => {
 	return (
 		<div className="bg-[#F3F7F8] p-4 md:p-14 flex flex-col gap-14">
 			<div className="mx-auto text-center font-bold text-3xl md:text-5xl max-w-4xl">

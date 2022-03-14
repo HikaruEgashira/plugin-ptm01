@@ -3,10 +3,10 @@ import React from "react";
 import { ButtonLink } from "./Button";
 
 export type FeatureBoxProps = {
-	title: string;
+	title: JSX.Element;
 	imageUrl: string;
 	description: JSX.Element;
-	actionLabel: string;
+	actionLabel: JSX.Element;
 	actionUrl: string;
 	className?: string;
 };

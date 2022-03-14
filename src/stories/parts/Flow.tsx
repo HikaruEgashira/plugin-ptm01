@@ -1,33 +1,33 @@
 import React from "react";
 import { Card } from "../Card";
 
-export type Attribute = {};
+export type Props = {
+	cardATitle: JSX.Element;
+	cardAImageUrl: string;
+	cardADescription: JSX.Element;
+	cardALabel: JSX.Element;
 
-const View: React.FC<Attribute> = () => {
+	cardBTitle: JSX.Element;
+	cardBImageUrl: string;
+	cardBDescription: JSX.Element;
+	cardBLabel: JSX.Element;
+};
+
+const View: React.FC<Props> = (props) => {
 	return (
 		<>
 			<div className="py-10 lg:px-10 w-full max-w-5xl mx-auto grid grid-cols-2 gap-4">
 				<Card
-					imageUrl="./undraw_secure_files_re_6vdh.svg"
-					title="PTM Community"
-					description={
-						<>
-							<div>K-Map購入者限定の</div>
-							<div>Facebookコミュニティ</div>
-						</>
-					}
-					bottomLabel="無料"
+					title={props.cardATitle}
+					imageUrl={props.cardAImageUrl}
+					description={props.cardADescription}
+					bottomLabel={props.cardALabel}
 				/>
 				<Card
-					imageUrl="./undraw_team_collaboration_re_ow29.svg"
-					title="PTM Lab"
-					description={
-						<>
-							<div>みんなで最高のMapをつくる</div>
-							<div>コミュニティ</div>
-						</>
-					}
-					bottomLabel="月額 990円"
+					title={props.cardBTitle}
+					imageUrl={props.cardBImageUrl}
+					description={props.cardBDescription}
+					bottomLabel={props.cardBLabel}
 				/>
 			</div>
 		</>

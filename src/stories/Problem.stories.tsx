@@ -18,4 +18,10 @@ const Template: ComponentStory<typeof Problem> = (args) => (
 
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const Basic = Template.bind({});
-Basic.args = {};
+Basic.args = {
+	title: <>課題1</>,
+	description: (
+		<>トレーニング種目を知っているが、 効果や意義を説明できない...</>
+	),
+	imageUrl: "./undraw_professor_re_mj1s.svg",
+};

@@ -21,9 +21,9 @@ const Template: ComponentStory<typeof FeatureBox> = (args) => (
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 export const Basic = Template.bind({});
 Basic.args = {
-	title: "マップ",
+	title: <>マップ</>,
 	description: <>マップを作成する</>,
-	actionLabel: "マップを作成する",
+	actionLabel: <>マップを作成する</>,
 	actionUrl: "/map",
 	imageUrl: "./undraw_people_re_8spw.svg",
 };

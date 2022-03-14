@@ -3,11 +3,11 @@ import cn from "classnames";
 import { Button } from "./Button";
 
 export type CardProps = {
-	title: string;
-	imageUrl: string;
+	title: JSX.Element;
 	description: JSX.Element;
+	bottomLabel: JSX.Element;
+	imageUrl: string;
 	className?: string;
-	bottomLabel?: string;
 };
 
 export const Card: React.FC<CardProps> = ({
@@ -18,7 +18,7 @@ export const Card: React.FC<CardProps> = ({
 	bottomLabel,
 }) => {
 	return (
-		<div className={cn("py-8 shadow-xl rounded-xl", className)}>
+		<div className={cn("py-8 shadow-xl rounded-xl border", className)}>
 			<div className="mx-auto max-w-xs flex flex-col items-center gap-4">
 				<img className="h-36 w-full" alt="cardimage" src={imageUrl} />
 				<div className="text-2xl font-bold">{title}</div>
