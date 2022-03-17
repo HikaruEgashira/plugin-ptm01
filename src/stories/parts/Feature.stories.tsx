@@ -13,6 +13,9 @@ const Template: ComponentStory<typeof Feature> = (args) => (
 );
 
 export const props: Props = {
+	topTitle: <>Performance Treasure Mapはこれらすべてを解決できます!!</>,
+	topImageUrl: "./map.png",
+
 	title: <div>Original K-Mapの強み</div>,
 	subTitle: (
 		<>

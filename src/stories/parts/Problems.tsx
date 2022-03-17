@@ -24,9 +24,6 @@ export type Props = {
 	problemDImageUrl: string;
 	problemDDescription: JSX.Element;
 
-	bottomTitle: JSX.Element;
-	bottomImageUrl: string;
-
 	slim?: boolean;
 };
 
@@ -63,16 +60,6 @@ const View: React.FC<Props> = (props) => {
 						/>
 					</div>
 				</div>
-			</div>
-			<div className="mt-10">
-				<div className="px-4 flex items-center justify-center text-2xl h-64 text-white bg-[#0591A0]">
-					{props.bottomTitle}
-				</div>
-				<img
-					className="h-96 w-full object-cover"
-					src={props.bottomImageUrl}
-					alt="map"
-				/>
 			</div>
 		</>
 	);

@@ -23,9 +23,6 @@ export type Attribute = {
 	problemDTitle: string;
 	problemDImageUrl: string;
 	problemDDescription: string;
-
-	bottomTitle: string;
-	bottomImageUrl: string;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -79,13 +76,6 @@ const config: BlockConfiguration<Attribute> = {
 			type: "string",
 		},
 		problemDDescription: {
-			type: "string",
-		},
-
-		bottomTitle: {
-			type: "string",
-		},
-		bottomImageUrl: {
 			type: "string",
 		},
 	},

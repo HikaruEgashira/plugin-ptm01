@@ -6,6 +6,9 @@ import edit from "./edit";
 import save from "./save";
 
 export type Attribute = {
+	topTitle: string;
+	topImageUrl: string;
+
 	title: string;
 	subTitle: string;
 
@@ -42,6 +45,13 @@ const config: BlockConfiguration<Attribute> = {
 		reusable: false,
 	},
 	attributes: {
+		topTitle: {
+			type: "string",
+		},
+		topImageUrl: {
+			type: "string",
+		},
+
 		title: {
 			type: "string",
 		},

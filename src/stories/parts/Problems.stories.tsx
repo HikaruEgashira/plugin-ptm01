@@ -49,9 +49,6 @@ export const props: Props = {
 			これまで学んだ<Accent>知識や技術の整理</Accent>ができない…
 		</>
 	),
-
-	bottomTitle: <>Performance Treasure Mapはこれらすべてを解決できます!!</>,
-	bottomImageUrl: "./map.png",
 };
 export const Basic = Template.bind({});
 Basic.args = props;

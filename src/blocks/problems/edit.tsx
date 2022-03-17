@@ -42,13 +42,6 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							value={attributes.problemDImageUrl}
 							onChange={(value) => setAttributes({ problemDImageUrl: value })}
 						/>
-						<legend className="blocks-base-control__label">
-							bottomImageUrl
-						</legend>
-						<TextControl
-							value={attributes.bottomImageUrl}
-							onChange={(value) => setAttributes({ bottomImageUrl: value })}
-						/>
 					</fieldset>
 				</div>
 			</InspectorControls>
@@ -112,13 +105,6 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					/>
 				}
 				problemDImageUrl={attributes.problemDImageUrl}
-				bottomTitle={
-					<RichText
-						value={attributes.bottomTitle}
-						onChange={(value) => setAttributes({ bottomTitle: value })}
-					/>
-				}
-				bottomImageUrl={attributes.bottomImageUrl}
 			/>
 		</>
 	);

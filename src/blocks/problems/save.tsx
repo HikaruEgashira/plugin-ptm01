@@ -48,10 +48,6 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 				/>
 			}
 			problemDImageUrl={attributes.problemDImageUrl}
-			bottomTitle={
-				<RichText.Content tagName="span" value={attributes.bottomTitle} />
-			}
-			bottomImageUrl={attributes.bottomImageUrl}
 		/>
 	);
 };
