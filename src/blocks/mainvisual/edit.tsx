@@ -53,7 +53,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 			<MainVisual
 				title={<RichText value={attributes.title} onChange={onChangeTitle} />}
 				leftButton={
-					<Button>
+					<Button rounded>
 						<RichText
 							value={attributes.leftButtonLabel}
 							onChange={onChangeLButton}
@@ -61,7 +61,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					</Button>
 				}
 				rightButton={
-					<Button outline>
+					<Button rounded outline>
 						<RichText
 							value={attributes.rightButtonLabel}
 							onChange={onChangeRButton}
