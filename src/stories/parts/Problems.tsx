@@ -30,7 +30,7 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="bg-white py-10 lg:px-10 max-w-5xl mx-auto">
+			<div className="container bg-white max-w-5xl mx-auto">
 				<div className="font-bold text-xl text-center pb-4">{props.title}</div>
 				<div className="flex flex-col">
 					<div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2">

@@ -88,7 +88,7 @@ function dynamic_render_callback( $block_attributes, $content ) {
 					</div>
 				</a>
 			</div>
-			<a class="text-right underline block" href="https://ptm01.com/topics/for-trainer/">トレーナー向け記事をもっとみる</a>
+			<a class="text-right underline block" href="https://ptm01.com/topics/for-trainer/">トレーナー向けブログをもっとみる</a>
 			<div class="underline text-xl text-[#1A2F60] mt-10">選手・コーチ向け</div>
 			<div class="py-4 w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
 				<a href="%10$s">
@@ -134,7 +134,7 @@ function dynamic_render_callback( $block_attributes, $content ) {
 					</div>
 				</a>
 			</div>
-			<a class="text-right underline block" href="https://ptm01.com/topics/for-player-coach/">選手・コーチ向け記事をもっとみる</a>
+			<a class="text-right underline block" href="https://ptm01.com/topics/for-player-coach/">選手・コーチ向けブログをもっとみる</a>
 		</div>
 		',
         esc_url( get_permalink( $posts_for_trainer[ 0 ]['ID'] ) ),
@@ -158,8 +158,8 @@ function dynamic_render_callback( $block_attributes, $content ) {
     );
 }
 
-register_block_type('ptm01/posts', array(
-	'editor_script' => 'ptm01-block/posts',
-	'style' => 'ptm01-style/posts',
-	'render_callback' => 'dynamic_render_callback'
-));
+// register_block_type('ptm01/posts', array(
+// 	'editor_script' => 'ptm01-block/posts',
+// 	'style' => 'ptm01-style/posts',
+// 	'render_callback' => 'dynamic_render_callback'
+// ));

@@ -22,8 +22,12 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 	return (
 		<div className={cn("flex flex-col items-center gap-4 p-4", className)}>
 			<div className="text-3xl font-bold">{title}</div>
-			<img className="h-36 w-full" alt="featureimage" src={imageUrl} />
-			<div className="text-sm w-full text-left h-32 overflow-y-auto">
+			<img
+				className="h-36 w-full object-contain"
+				alt="featureimage"
+				src={imageUrl}
+			/>
+			<div className="text-sm w-full leading-normal text-left overflow-y-auto">
 				{description}
 			</div>
 			<ButtonLink url={actionUrl} small>

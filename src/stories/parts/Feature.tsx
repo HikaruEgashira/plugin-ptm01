@@ -34,9 +34,9 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="py-10 lg:px-10 max-w-5xl mx-auto">
+			<div className="container max-w-5xl mx-auto">
 				<div className="mt-10">
-					<div className="px-4 flex items-center justify-center text-2xl h-64 text-white bg-[#0591A0]">
+					<div className="px-4 flex items-center justify-center text-2xl font-bold h-64 text-white bg-[#0591A0]">
 						{props.topTitle}
 					</div>
 					<div className="h-96 w-full overflow-hidden">
@@ -50,9 +50,9 @@ const View: React.FC<Props> = (props) => {
 
 				<div className="font-bold text-xl text-center pb-8">{props.title}</div>
 				<div className="text-center font-bold">{props.subTitle}</div>
-				<div className="flex items-center lg:items-start flex-col lg:flex-row w-full gap-4">
+				<div className="flex items-center flex-col w-full gap-4">
 					<FeatureBox
-						className="w-full max-w-sm lg:w-1/3"
+						className="w-full max-w-sm"
 						title={props.featureATitle}
 						imageUrl={props.featureAImageUrl}
 						description={props.featureADescription}
@@ -60,7 +60,7 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureAActionUrl}
 					/>
 					<FeatureBox
-						className="w-full max-w-sm lg:w-1/3"
+						className="w-full max-w-sm"
 						title={props.featureBTitle}
 						imageUrl={props.featureBImageUrl}
 						description={props.featureBDescription}
@@ -68,7 +68,7 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureBActionUrl}
 					/>
 					<FeatureBox
-						className="w-full max-w-sm lg:w-1/3"
+						className="w-full max-w-sm"
 						title={props.featureCTitle}
 						imageUrl={props.featureCImageUrl}
 						description={props.featureCDescription}

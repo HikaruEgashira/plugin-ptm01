@@ -25,7 +25,7 @@ const View: React.FC<BlockEditProps<Attribute>> = () => {
 				<Posts posts={postsForTrainer} title="トレーナー向け" />
 			</div>
 			<div>
-				<Posts posts={postsForTrainer} title="選手・コーチ向け" />
+				<Posts posts={postsForPlayerCoach} title="選手・コーチ向け" />
 			</div>
 		</div>
 	);

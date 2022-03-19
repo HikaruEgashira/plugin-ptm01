@@ -10,15 +10,15 @@ export type Props = {
 const View: React.FC<Props> = ({ title, posts }) => {
 	return (
 		<>
-			<div className="text-xl underline lg:px-10 text-[#1A2F60]">{title}</div>
+			<div className="container text-xl underline text-[#1A2F60]">{title}</div>
 			<div className="py-4 lg:px-10 w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
 				{!posts ?? "Loading..."}
-				{posts?.map((post) => (
+				{posts?.slice(2).map((post) => (
 					<PostCard post={post}></PostCard>
 				))}
 			</div>
 			<a className="text-right underline block" href="">
-				トレーナー向け記事をもっとみる
+				トレーナー向けブログをもっとみる
 			</a>
 		</>
 	);
