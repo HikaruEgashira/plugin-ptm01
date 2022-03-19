@@ -18,10 +18,10 @@ export const Card: React.FC<CardProps> = ({
 	bottomLabel,
 }) => {
 	return (
-		<div className={cn("py-8 shadow-xl rounded-xl border", className)}>
+		<div className={cn("p-4 shadow-xl rounded-xl border", className)}>
 			<div className="mx-auto max-w-xs flex flex-col items-center gap-4">
 				<img
-					className="h-36 w-full object-contain"
+					className="h-36 px-4 w-full object-contain"
 					alt="cardimage"
 					src={imageUrl}
 				/>

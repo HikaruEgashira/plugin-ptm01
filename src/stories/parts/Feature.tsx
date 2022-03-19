@@ -34,14 +34,14 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="container max-w-5xl mx-auto">
-				<div className="mt-10">
+			<div className="container max-w-5xl mx-auto py-8 bg-[#F3F7F8]">
+				<div className="mb-8">
 					<div className="px-4 flex items-center justify-center text-2xl font-bold h-64 text-white bg-[#0591A0]">
 						{props.topTitle}
 					</div>
-					<div className="h-96 w-full overflow-hidden">
+					<div className="overflow-hidden">
 						<img
-							className="object-cover hover:scale-125 transition-all duration-500"
+							className="object-cover hover:scale-125 transition-all duration-500 h-64 w-full"
 							src={props.topImageUrl}
 							alt="map"
 						/>
@@ -76,7 +76,7 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureCActionUrl}
 					/>
 				</div>
-				<div className="max-w-xl mx-auto my-10 text-lg grid gap-2">
+				<div className="max-w-xl mx-auto px-4 py-8 text-lg grid gap-2">
 					{props.pointA}
 					{props.pointB}
 					{props.pointC}
