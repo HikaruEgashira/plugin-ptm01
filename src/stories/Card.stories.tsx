@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof Card>;
 
 const Template: ComponentStory<typeof Card> = (args) => (
-	<div className="max-w-sm">
+	<div className="ptm-max-w-sm">
 		<Card {...args} />
 	</div>
 );

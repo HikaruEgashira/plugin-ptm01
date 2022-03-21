@@ -14,5 +14,5 @@
 }
 
 .video-container {
-	@apply mx-auto;
+	@apply ptm-mx-auto;
 }

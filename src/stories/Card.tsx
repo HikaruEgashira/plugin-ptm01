@@ -18,15 +18,22 @@ export const Card: React.FC<CardProps> = ({
 	bottomLabel,
 }) => {
 	return (
-		<div className={cn("p-4 shadow-xl rounded-xl border", className)}>
-			<div className="mx-auto max-w-xs flex flex-col items-center gap-4">
+		<div
+			className={cn(
+				"ptm-p-4 ptm-shadow-xl ptm-rounded-xl ptm-border",
+				className
+			)}
+		>
+			<div className="ptm-mx-auto ptm-max-w-xs ptm-flex ptm-flex-col ptm-items-center ptm-gap-4">
 				<img
-					className="h-36 px-4 w-full object-contain"
+					className="ptm-h-36 ptm-px-4 ptm-w-full ptm-object-contain"
 					alt="cardimage"
 					src={imageUrl}
 				/>
-				<div className="text-2xl font-bold">{title}</div>
-				<div className="text-center leading-relaxed">{description}</div>
+				<div className="ptm-text-2xl ptm-font-bold">{title}</div>
+				<div className="ptm-text-center ptm-text-lg ptm-leading-relaxed">
+					{description}
+				</div>
 				<Button rounded>{bottomLabel}</Button>
 			</div>
 		</div>

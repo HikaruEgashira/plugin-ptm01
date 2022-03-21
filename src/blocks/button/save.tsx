@@ -11,7 +11,7 @@ const Save: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 		<a href={attributes.href}>
 			<Button
 				{...blockProps}
-				className="hover:shadow-2xl"
+				className="hover:ptm-shadow-2xl"
 				outline={Boolean(attributes.outline)}
 			>
 				<RichText.Content tagName="span" value={attributes.title} />

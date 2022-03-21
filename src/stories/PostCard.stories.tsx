@@ -9,7 +9,7 @@ export default {
 } as ComponentMeta<typeof PostCard>;
 
 const Template: ComponentStory<typeof PostCard> = (args) => (
-	<div className="w-full max-w-sm">
+	<div className="ptm-w-full ptm-max-w-sm">
 		<PostCard {...args} />
 	</div>
 );

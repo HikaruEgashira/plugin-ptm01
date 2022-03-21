@@ -26,8 +26,8 @@ const Edit: React.FC<BlockEditProps<Attribute>> = ({
 	return (
 		<>
 			<InspectorControls key="setting">
-				<div className="p-4 grid gap-4">
-					<fieldset className="grid gap-2">
+				<div className="ptm-p-4 ptm-grid ptm-gap-4">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">Outline</legend>
 						<ToggleControl checked={attributes.outline} onChange={setOutline} />
 						<legend className="blocks-base-control__label">Link</legend>

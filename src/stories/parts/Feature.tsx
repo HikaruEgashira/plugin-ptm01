@@ -33,26 +33,27 @@ export type Props = {
 
 const View: React.FC<Props> = (props) => {
 	return (
-		<>
-			<div className="container max-w-5xl mx-auto py-8 bg-[#F3F7F8]">
-				<div className="mb-8">
-					<div className="px-4 flex items-center justify-center text-2xl font-bold h-64 text-white bg-[#0591A0]">
-						{props.topTitle}
-					</div>
-					<div className="overflow-hidden">
-						<img
-							className="object-cover hover:scale-125 transition-all duration-500 h-64 w-full"
-							src={props.topImageUrl}
-							alt="map"
-						/>
-					</div>
+		<div className="ptm-bg-[#F3F7F8]">
+			<div className="ptm-mb-10">
+				<div className="ptm-px-4 ptm-flex ptm-items-center ptm-justify-center ptm-text-3xl ptm-font-bold ptm-h-96 ptm-text-white ptm-bg-[#0591A0]">
+					{props.topTitle}
 				</div>
-
-				<div className="font-bold text-xl text-center pb-8">{props.title}</div>
-				<div className="text-center font-bold">{props.subTitle}</div>
-				<div className="flex items-center flex-col w-full gap-4">
+				<div className="ptm-overflow-hidden">
+					<img
+						className="ptm-object-cover hover:ptm-scale-125 ptm-transition-all ptm-duration-300 ptm-h-96 ptm-w-full"
+						src={props.topImageUrl}
+						alt="map"
+					/>
+				</div>
+			</div>
+			<div className="ptm-container ptm-max-w-5xl ptm-mx-auto ptm-pb-8">
+				<div className="ptm-font-bold ptm-text-2xl ptm-text-center ptm-pb-8">
+					{props.title}
+				</div>
+				<div className="ptm-text-center ptm-font-bold">{props.subTitle}</div>
+				<div className="ptm-flex ptm-items-center ptm-flex-col ptm-w-full ptm-gap-4">
 					<FeatureBox
-						className="w-full max-w-sm"
+						className="ptm-w-full ptm-max-w-sm"
 						title={props.featureATitle}
 						imageUrl={props.featureAImageUrl}
 						description={props.featureADescription}
@@ -60,7 +61,7 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureAActionUrl}
 					/>
 					<FeatureBox
-						className="w-full max-w-sm"
+						className="ptm-w-full ptm-max-w-sm"
 						title={props.featureBTitle}
 						imageUrl={props.featureBImageUrl}
 						description={props.featureBDescription}
@@ -68,7 +69,7 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureBActionUrl}
 					/>
 					<FeatureBox
-						className="w-full max-w-sm"
+						className="ptm-w-full ptm-max-w-sm"
 						title={props.featureCTitle}
 						imageUrl={props.featureCImageUrl}
 						description={props.featureCDescription}
@@ -76,13 +77,13 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureCActionUrl}
 					/>
 				</div>
-				<div className="max-w-xl mx-auto px-4 py-8 text-lg grid gap-2">
+				<div className="ptm-max-w-2xl ptm-mx-auto ptm-px-4 ptm-py-8 ptm-text-xl ptm-grid ptm-gap-4">
 					{props.pointA}
 					{props.pointB}
 					{props.pointC}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

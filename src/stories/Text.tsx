@@ -5,5 +5,5 @@ export type TextProps = {
 };
 
 export const Text: React.FC<TextProps> = ({ label }) => {
-	return <div className="text-base-content">{label}</div>;
+	return <div className="ptm-text-base-content">{label}</div>;
 };

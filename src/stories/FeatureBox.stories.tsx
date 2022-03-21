@@ -13,7 +13,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof FeatureBox> = (args) => (
-	<div className="max-w-xs">
+	<div className="ptm-max-w-xs">
 		<FeatureBox {...args} />
 	</div>
 );

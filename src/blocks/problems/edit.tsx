@@ -12,8 +12,8 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 	return (
 		<>
 			<InspectorControls key="setting">
-				<div className="p-4 grid gap-4">
-					<fieldset className="grid gap-2">
+				<div className="ptm-p-4 ptm-grid ptm-gap-4">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							problemAImageUrl
 						</legend>
@@ -47,6 +47,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 			</InspectorControls>
 
 			<Problems
+				slim
 				title={
 					<RichText
 						value={attributes.title}

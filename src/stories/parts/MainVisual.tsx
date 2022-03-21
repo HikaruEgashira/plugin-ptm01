@@ -9,17 +9,17 @@ export type Props = {
 
 const View: React.FC<Props> = ({ title, leftButton, rightButton }) => {
 	return (
-		<div className="container bg-[#F3F7F8] px-4 py-8 flex flex-col gap-10">
-			<div className="mx-auto text-center font-bold text-3xl md:text-5xl max-w-4xl">
+		<div className="ptm-container ptm-bg-[#F3F7F8] ptm-px-4 ptm-py-10 ptm-flex ptm-flex-col ptm-gap-10">
+			<div className="ptm-mx-auto ptm-text-center ptm-font-bold ptm-text-5xl ptm-max-w-5xl">
 				{title}
 			</div>
-			<div className="flex flex-col gap-4 place-content-center items-center md:flex-row">
+			<div className="ptm-flex ptm-flex-col ptm-gap-4 ptm-place-content-center ptm-items-center md:ptm-flex-row">
 				{leftButton}
 				{rightButton}
 			</div>
-			<div className="movie-wrap">
+			<div className="ptm-movie-wrap">
 				<iframe
-					className="lg:mx-auto"
+					className="lg:ptm-mx-auto"
 					width={800}
 					height={450}
 					src="https://www.youtube.com/embed/q7s81feOwmM?controls=0"

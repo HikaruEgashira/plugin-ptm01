@@ -30,10 +30,12 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="container max-w-5xl mx-auto bg-white py-8">
-				<div className="font-bold text-xl text-center pb-4">{props.title}</div>
-				<div className="flex flex-col">
-					<div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2">
+			<div className="ptm-container ptm-max-w-5xl ptm-mx-auto ptm-bg-white ptm-py-8">
+				<div className="ptm-font-bold ptm-text-2xl ptm-text-center ptm-pb-4">
+					{props.title}
+				</div>
+				<div className="ptm-flex ptm-flex-col">
+					<div className="ptm-max-w-6xl ptm-w-full ptm-grid ptm-grid-cols-1 md:ptm-grid-cols-2">
 						<Problem
 							title={props.problemATitle}
 							imageUrl={props.problemAImageUrl}

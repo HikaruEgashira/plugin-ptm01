@@ -20,14 +20,19 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 	className,
 }) => {
 	return (
-		<div className={cn("flex flex-col items-center gap-4 p-4", className)}>
-			<div className="text-3xl font-bold">{title}</div>
+		<div
+			className={cn(
+				"ptm-flex ptm-flex-col ptm-items-center ptm-gap-4 ptm-p-4",
+				className
+			)}
+		>
+			<div className="ptm-text-3xl ptm-font-bold">{title}</div>
 			<img
-				className="h-36 w-full object-contain"
+				className="ptm-h-36 ptm-w-full ptm-object-contain"
 				alt="featureimage"
 				src={imageUrl}
 			/>
-			<div className="text-sm w-full leading-normal text-left overflow-y-auto">
+			<div className="ptm-text-lg ptm-w-full ptm-leading-normal ptm-text-left ptm-overflow-y-auto">
 				{description}
 			</div>
 			<ButtonLink url={actionUrl} small>

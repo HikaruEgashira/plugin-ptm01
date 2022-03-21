@@ -12,15 +12,15 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 	return (
 		<>
 			<InspectorControls key="setting">
-				<div className="p-4 grid gap-4">
-					<fieldset className="grid gap-2">
+				<div className="ptm-p-4 ptm-grid ptm-gap-4">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">topImageUrl</legend>
 						<TextControl
 							value={attributes.topImageUrl}
 							onChange={(value) => setAttributes({ topImageUrl: value })}
 						/>
 					</fieldset>
-					<fieldset className="grid gap-2">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureAImageUrl
 						</legend>
@@ -29,7 +29,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							onChange={(value) => setAttributes({ featureAImageUrl: value })}
 						/>
 					</fieldset>
-					<fieldset className="grid gap-2">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureAActionUrl
 						</legend>
@@ -39,7 +39,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 						/>
 					</fieldset>
 
-					<fieldset className="grid gap-2">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureBImageUrl
 						</legend>
@@ -48,7 +48,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							onChange={(value) => setAttributes({ featureBImageUrl: value })}
 						/>
 					</fieldset>
-					<fieldset className="grid gap-2">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureBActionUrl
 						</legend>
@@ -58,7 +58,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 						/>
 					</fieldset>
 
-					<fieldset className="grid gap-2">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureCImageUrl
 						</legend>
@@ -67,7 +67,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							onChange={(value) => setAttributes({ featureCImageUrl: value })}
 						/>
 					</fieldset>
-					<fieldset className="grid gap-2">
+					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureCActionUrl
 						</legend>
