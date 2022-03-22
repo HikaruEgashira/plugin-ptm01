@@ -10,11 +10,13 @@ export type Attribute = {
 	cardAImageUrl: string;
 	cardADescription: string;
 	cardALabel: string;
+	cardAUrl: string;
 
 	cardBTitle: string;
 	cardBImageUrl: string;
 	cardBDescription: string;
 	cardBLabel: string;
+	cardBUrl: string;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -39,6 +41,9 @@ const config: BlockConfiguration<Attribute> = {
 		cardATitle: {
 			type: "string",
 		},
+		cardAUrl: {
+			type: "string",
+		},
 		cardBDescription: {
 			type: "string",
 		},
@@ -49,6 +54,9 @@ const config: BlockConfiguration<Attribute> = {
 			type: "string",
 		},
 		cardBTitle: {
+			type: "string",
+		},
+		cardBUrl: {
 			type: "string",
 		},
 	},

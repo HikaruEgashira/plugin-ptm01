@@ -12,14 +12,14 @@ const idToUrl = (id: number) => `https://picsum.photos/id/${id}/200/100`;
 export const PostCard: React.FC<PostCardProps> = ({ post, className }) => {
 	return (
 		<a key={post.link} className={cn(className)}>
-			<div className="ptm-shadow-xl ptm-rounded-xl ptm-border hover:ptm-shadow-2xl ptm-transition-all ptm-h-48">
-				<div className="flex flex-col items-center">
+			<div className="ptm-h-48 ptm-rounded-xl ptm-border ptm-shadow-xl hover:ptm-shadow-2xl ptm-transition-all">
+				<div className="ptm-flex ptm-flex-col ptm-items-center">
 					<img
-						className="ptm-w-full ptm-object-cover ptm-h-36 ptm-rounded-t-xl"
+						className="ptm-object-cover ptm-w-full ptm-h-36 ptm-rounded-t-xl"
 						alt="cardimage"
 						src={idToUrl(post.featured_media ?? 0)}
 					/>
-					<div className="ptm-text-xl ptm-font-bold ptm-leading-8 ptm-py-2">
+					<div className="ptm-py-2 ptm-text-xl ptm-font-bold ptm-leading-8">
 						{post.title.rendered}
 					</div>
 				</div>

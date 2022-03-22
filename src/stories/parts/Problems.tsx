@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import { Icon } from "@iconify/react";
+import React from "react";
 import { Problem } from "~/stories/Problem";
 
 export const Accent: React.FC = ({ children }) => (
-	<span className="text-[#19585F] font-bold">{children}</span>
+	<span className="ptm-font-bold ptm-text-[#19585F]">{children}</span>
 );
 
 export type Props = {
@@ -24,18 +25,20 @@ export type Props = {
 	problemDImageUrl: string;
 	problemDDescription: JSX.Element;
 
+	message: JSX.Element;
+
 	slim?: boolean;
 };
 
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="ptm-container ptm-max-w-5xl ptm-mx-auto ptm-bg-white ptm-py-8">
-				<div className="ptm-font-bold ptm-text-2xl ptm-text-center ptm-pb-4">
+			<div className="ptm-container ptm-py-8 ptm-mx-auto ptm-max-w-5xl ptm-bg-white">
+				<div className="ptm-pb-4 ptm-text-3xl ptm-font-bold ptm-text-center">
 					{props.title}
 				</div>
 				<div className="ptm-flex ptm-flex-col">
-					<div className="ptm-max-w-6xl ptm-w-full ptm-grid ptm-grid-cols-1 md:ptm-grid-cols-2">
+					<div className="ptm-grid ptm-grid-cols-1 ptm-w-full ptm-max-w-6xl md:ptm-grid-cols-2">
 						<Problem
 							title={props.problemATitle}
 							imageUrl={props.problemAImageUrl}
@@ -62,6 +65,12 @@ const View: React.FC<Props> = (props) => {
 						/>
 					</div>
 				</div>
+			</div>
+			<div className="ptm-py-8">
+				<Icon icon="mdi:chevron-down" fontSize={56} className="ptm-mx-auto" />
+			</div>
+			<div className="ptm-flex ptm-justify-center ptm-items-center ptm-py-10 ptm-px-4 ptm-text-2xl ptm-font-bold ptm-text-white ptm-bg-[#0591A0]">
+				{props.message}
 			</div>
 		</>
 	);

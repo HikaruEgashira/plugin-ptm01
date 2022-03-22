@@ -12,7 +12,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 	return (
 		<>
 			<InspectorControls key="setting">
-				<div className="ptm-p-4 ptm-grid ptm-gap-4">
+				<div className="ptm-grid ptm-gap-4 ptm-p-4">
 					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							cardAImageUrl
@@ -21,12 +21,22 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							value={attributes.cardAImageUrl}
 							onChange={(value) => setAttributes({ cardAImageUrl: value })}
 						/>
+						<legend className="blocks-base-control__label">cardAUrl</legend>
+						<TextControl
+							value={attributes.cardAUrl}
+							onChange={(value) => setAttributes({ cardAUrl: value })}
+						/>
 						<legend className="blocks-base-control__label">
 							cardBImageUrl
 						</legend>
 						<TextControl
 							value={attributes.cardBImageUrl}
 							onChange={(value) => setAttributes({ cardBImageUrl: value })}
+						/>
+						<legend className="blocks-base-control__label">cardBUrl</legend>
+						<TextControl
+							value={attributes.cardBUrl}
+							onChange={(value) => setAttributes({ cardBUrl: value })}
 						/>
 					</fieldset>
 				</div>
@@ -52,6 +62,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					/>
 				}
 				cardAImageUrl={attributes.cardAImageUrl}
+				cardAUrl={attributes.cardAUrl}
 				cardBTitle={
 					<RichText
 						value={attributes.cardBTitle}
@@ -71,6 +82,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					/>
 				}
 				cardBImageUrl={attributes.cardBImageUrl}
+				cardBUrl={attributes.cardBUrl}
 			/>
 		</>
 	);

@@ -12,7 +12,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 	return (
 		<>
 			<InspectorControls key="setting">
-				<div className="ptm-p-4 ptm-grid ptm-gap-4">
+				<div className="ptm-grid ptm-gap-4 ptm-p-4">
 					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">topImageUrl</legend>
 						<TextControl

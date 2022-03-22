@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
 	return (
 		<div
 			className={cn(
-				"ptm-py-3 ptm-px-6 ptm-inline-flex ptm-justify-center ptm-items-center ptm-min-w-[10rem]",
+				"ptm-py-3 ptm-px-6 ptm-inline-flex ptm-justify-center ptm-items-center ptm-min-w-[10rem] ptm-whitespace-nowrap",
 				{
 					"ptm-text-sm": small,
 					"ptm-rounded": !rounded,
@@ -41,13 +41,21 @@ export const ButtonLink: React.FC<{
 	outline?: boolean;
 	rounded?: boolean;
 	small?: boolean;
-}> = ({ url, outline = false, rounded = false, small = false, children }) => (
-	<a href={url}>
+	className?: string;
+}> = ({
+	url,
+	outline = false,
+	rounded = false,
+	small = false,
+	children,
+	className,
+}) => (
+	<a href={url} className="ptm-grid">
 		<Button
 			outline={outline}
 			rounded={rounded}
 			small={small}
-			className="hover:ptm-shadow-2xl ptm-transition-all"
+			className={cn("hover:ptm-shadow-2xl ptm-transition-all", className)}
 		>
 			{children}
 		</Button>

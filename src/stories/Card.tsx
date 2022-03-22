@@ -1,12 +1,13 @@
 import React from "react";
 import cn from "classnames";
-import { Button } from "./Button";
+import { ButtonLink } from "./Button";
 
 export type CardProps = {
 	title: JSX.Element;
 	description: JSX.Element;
 	bottomLabel: JSX.Element;
 	imageUrl: string;
+	bottomUrl: string;
 	className?: string;
 };
 
@@ -16,6 +17,7 @@ export const Card: React.FC<CardProps> = ({
 	imageUrl,
 	className,
 	bottomLabel,
+	bottomUrl,
 }) => {
 	return (
 		<div
@@ -24,17 +26,19 @@ export const Card: React.FC<CardProps> = ({
 				className
 			)}
 		>
-			<div className="ptm-mx-auto ptm-max-w-xs ptm-flex ptm-flex-col ptm-items-center ptm-gap-4">
+			<div className="ptm-flex ptm-flex-col ptm-gap-4 ptm-items-center ptm-mx-auto ptm-max-w-xs">
 				<img
-					className="ptm-h-36 ptm-px-4 ptm-w-full ptm-object-contain"
+					className="ptm-object-contain ptm-px-4 ptm-w-full ptm-h-36"
 					alt="cardimage"
 					src={imageUrl}
 				/>
 				<div className="ptm-text-2xl ptm-font-bold">{title}</div>
-				<div className="ptm-text-center ptm-text-lg ptm-leading-relaxed">
+				<div className="ptm-text-lg ptm-leading-relaxed ptm-text-center">
 					{description}
 				</div>
-				<Button rounded>{bottomLabel}</Button>
+				<ButtonLink url={bottomUrl} rounded>
+					{bottomLabel}
+				</ButtonLink>
 			</div>
 		</div>
 	);

@@ -23,6 +23,8 @@ export type Attribute = {
 	problemDTitle: string;
 	problemDImageUrl: string;
 	problemDDescription: string;
+
+	message: string;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -76,6 +78,10 @@ const config: BlockConfiguration<Attribute> = {
 			type: "string",
 		},
 		problemDDescription: {
+			type: "string",
+		},
+
+		message: {
 			type: "string",
 		},
 	},

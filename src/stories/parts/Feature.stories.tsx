@@ -19,8 +19,8 @@ export const props: Props = {
 	title: <div>Original K-Mapの強み</div>,
 	subTitle: (
 		<>
-			<span className="text-red-500">＼</span> 驚異のリンク{" "}
-			<span className="text-red-500">／</span>
+			<span className="ptm-text-red-500">＼</span> 驚異のリンク{" "}
+			<span className="ptm-text-red-500">／</span>
 		</>
 	),
 

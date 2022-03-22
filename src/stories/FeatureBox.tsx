@@ -28,11 +28,11 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 		>
 			<div className="ptm-text-3xl ptm-font-bold">{title}</div>
 			<img
-				className="ptm-h-36 ptm-w-full ptm-object-contain"
+				className="ptm-object-contain ptm-h-32"
 				alt="featureimage"
 				src={imageUrl}
 			/>
-			<div className="ptm-text-lg ptm-w-full ptm-leading-normal ptm-text-left ptm-overflow-y-auto">
+			<div className="ptm-w-full ptm-leading-normal ptm-text-left">
 				{description}
 			</div>
 			<ButtonLink url={actionUrl} small>

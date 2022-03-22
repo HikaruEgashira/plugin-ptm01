@@ -48,6 +48,7 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 				/>
 			}
 			problemDImageUrl={attributes.problemDImageUrl}
+			message={<RichText.Content tagName="span" value={attributes.message} />}
 		/>
 	);
 };
