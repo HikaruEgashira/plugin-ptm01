@@ -1,10 +1,20 @@
-import { Icon } from "@iconify/react";
-import React from "react";
+import React, { SVGProps } from "react";
 import { Problem } from "~/stories/Problem";
 
 export const Accent: React.FC = ({ children }) => (
 	<span className="ptm-font-bold ptm-text-[#19585F]">{children}</span>
 );
+
+function MdiChevronDown(props: SVGProps<SVGSVGElement>) {
+	return (
+		<svg width="6em" height="6em" viewBox="0 0 24 24" {...props}>
+			<path
+				fill="currentColor"
+				d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"
+			></path>
+		</svg>
+	);
+}
 
 export type Props = {
 	title: JSX.Element;
@@ -37,37 +47,35 @@ const View: React.FC<Props> = (props) => {
 				<div className="ptm-pb-4 ptm-text-3xl ptm-font-bold ptm-text-center">
 					{props.title}
 				</div>
-				<div className="ptm-flex ptm-flex-col">
-					<div className="ptm-grid ptm-grid-cols-1 ptm-w-full ptm-max-w-6xl md:ptm-grid-cols-2">
-						<Problem
-							title={props.problemATitle}
-							imageUrl={props.problemAImageUrl}
-							description={props.problemADescription}
-							slim={props.slim}
-						/>
-						<Problem
-							title={props.problemBTitle}
-							imageUrl={props.problemBImageUrl}
-							description={props.problemBDescription}
-							slim={props.slim}
-						/>
-						<Problem
-							title={props.problemCTitle}
-							imageUrl={props.problemCImageUrl}
-							description={props.problemCDescription}
-							slim={props.slim}
-						/>
-						<Problem
-							title={props.problemDTitle}
-							imageUrl={props.problemDImageUrl}
-							description={props.problemDDescription}
-							slim={props.slim}
-						/>
-					</div>
+				<div className="ptm-grid ptm-grid-cols-1 ptm-w-full ptm-max-w-6xl md:ptm-grid-cols-2">
+					<Problem
+						title={props.problemATitle}
+						imageUrl={props.problemAImageUrl}
+						description={props.problemADescription}
+						slim={props.slim}
+					/>
+					<Problem
+						title={props.problemBTitle}
+						imageUrl={props.problemBImageUrl}
+						description={props.problemBDescription}
+						slim={props.slim}
+					/>
+					<Problem
+						title={props.problemCTitle}
+						imageUrl={props.problemCImageUrl}
+						description={props.problemCDescription}
+						slim={props.slim}
+					/>
+					<Problem
+						title={props.problemDTitle}
+						imageUrl={props.problemDImageUrl}
+						description={props.problemDDescription}
+						slim={props.slim}
+					/>
 				</div>
 			</div>
-			<div className="ptm-py-8">
-				<Icon icon="mdi:chevron-down" fontSize={56} className="ptm-mx-auto" />
+			<div className="ptm-flex ptm-justify-center">
+				<MdiChevronDown />
 			</div>
 			<div className="ptm-flex ptm-justify-center ptm-items-center ptm-py-10 ptm-px-4 ptm-text-2xl ptm-font-bold ptm-text-white ptm-bg-[#0591A0]">
 				{props.message}

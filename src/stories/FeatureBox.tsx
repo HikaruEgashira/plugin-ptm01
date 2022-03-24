@@ -32,7 +32,7 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 				alt="featureimage"
 				src={imageUrl}
 			/>
-			<div className="ptm-w-full ptm-leading-normal ptm-text-left">
+			<div className="ptm-grow ptm-w-full ptm-leading-normal ptm-text-left">
 				{description}
 			</div>
 			<ButtonLink url={actionUrl} small>

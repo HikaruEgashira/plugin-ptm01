@@ -13,9 +13,6 @@ const Template: ComponentStory<typeof Feature> = (args) => (
 );
 
 export const props: Props = {
-	topTitle: <>Performance Treasure Mapはこれらすべてを解決できます!!</>,
-	topImageUrl: "./map.png",
-
 	title: <div>Original K-Mapの強み</div>,
 	subTitle: (
 		<>
@@ -54,11 +51,11 @@ export const props: Props = {
 		</>
 	),
 
-	pointA: <div>✅マップ x 動画 x ブログ解説がすべてリンクされています！！</div>,
-	pointB: <div>✅大学教員・専門研究者と連携して作成しています！！</div>,
+	pointA: <div>・マップ x 動画 x ブログ解説がすべてリンクされています！！</div>,
+	pointB: <div>・大学教員・専門研究者と連携して作成しています！！</div>,
 	pointC: (
 		<div>
-			✅英語対応（マップ・動画・ブログ）をしているので専門英語の勉強にもなります！！
+			・英語対応（マップ・動画・ブログ）をしているので専門英語の勉強にもなります！！
 		</div>
 	),
 };

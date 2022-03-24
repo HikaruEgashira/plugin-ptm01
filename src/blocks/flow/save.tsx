@@ -17,6 +17,7 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 				<RichText.Content tagName="span" value={attributes.cardALabel} />
 			}
 			cardAImageUrl={attributes.cardAImageUrl}
+			cardAUrl={attributes.cardAUrl}
 			cardBTitle={
 				<RichText.Content tagName="span" value={attributes.cardBTitle} />
 			}
@@ -27,6 +28,7 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 				<RichText.Content tagName="span" value={attributes.cardBLabel} />
 			}
 			cardBImageUrl={attributes.cardBImageUrl}
+			cardBUrl={attributes.cardBUrl}
 		/>
 	);
 };

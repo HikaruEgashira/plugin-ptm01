@@ -20,6 +20,7 @@ export const props: Props = {
 		</>
 	),
 	cardALabel: <>無料</>,
+	cardAUrl: "https://ptm01.com/private/",
 
 	cardBTitle: <>PTM Lab</>,
 	cardBImageUrl: "./undraw_team_collaboration_re_ow29.svg",
@@ -30,6 +31,7 @@ export const props: Props = {
 		</>
 	),
 	cardBLabel: <>月額 990円</>,
+	cardBUrl: "https://ptm01.com/ptm-lab/",
 };
 export const Basic = Template.bind({});
 Basic.args = props;

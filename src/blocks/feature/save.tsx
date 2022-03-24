@@ -7,8 +7,6 @@ import { Attribute } from ".";
 const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 	return (
 		<Feature
-			topTitle={<RichText.Content tagName="span" value={attributes.topTitle} />}
-			topImageUrl={attributes.topImageUrl}
 			title={<RichText.Content tagName="span" value={attributes.title} />}
 			subTitle={<RichText.Content tagName="span" value={attributes.subTitle} />}
 			featureATitle={

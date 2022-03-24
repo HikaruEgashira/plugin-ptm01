@@ -2,9 +2,6 @@ import React from "react";
 import { FeatureBox } from "../FeatureBox";
 
 export type Props = {
-	topTitle: JSX.Element;
-	topImageUrl: string;
-
 	title: JSX.Element;
 	subTitle: JSX.Element;
 
@@ -34,26 +31,14 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<div className="ptm-bg-[#F3F7F8]">
-			<div className="ptm-mb-10">
-				<div className="ptm-flex ptm-justify-center ptm-items-center ptm-py-10 ptm-px-4 ptm-text-2xl ptm-font-bold">
-					{props.topTitle}
-				</div>
-				<div className="ptm-overflow-hidden">
-					<img
-						className="ptm-object-cover ptm-w-full ptm-h-96 ptm-transition-all ptm-duration-300 hover:ptm-scale-125"
-						src={props.topImageUrl}
-						alt="map"
-					/>
-				</div>
-			</div>
-			<div className="ptm-container ptm-pb-8">
-				<div className="ptm-pb-4 ptm-text-3xl ptm-font-bold ptm-text-center">
+			<div className="ptm-container ptm-pb-8 ptm-mx-auto">
+				<div className="ptm-py-4 ptm-text-3xl ptm-font-bold ptm-text-center">
 					{props.title}
 				</div>
 				<div className="ptm-pb-8 ptm-text-xl ptm-font-bold ptm-text-center">
 					{props.subTitle}
 				</div>
-				<div className="ptm-flex ptm-flex-col ptm-gap-4 ptm-items-center ptm-w-full sm:ptm-flex-row">
+				<div className="ptm-flex ptm-flex-col ptm-gap-4 ptm-items-stretch sm:ptm-flex-row">
 					<FeatureBox
 						className="ptm-w-full lg:ptm-w-1/3"
 						title={props.featureATitle}

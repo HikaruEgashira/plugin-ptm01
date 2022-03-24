@@ -19,7 +19,6 @@ const View: React.FC<Props> = ({ title, leftButton, rightButton }) => {
 			</div>
 			<div className="movie-wrap">
 				<iframe
-					className="lg:ptm-mx-auto"
 					width={800}
 					height={450}
 					src="https://www.youtube.com/embed/q7s81feOwmM?controls=0"
@@ -27,7 +26,7 @@ const View: React.FC<Props> = ({ title, leftButton, rightButton }) => {
 					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowFullScreen
-				></iframe>
+				/>
 			</div>
 		</div>
 	);

@@ -2,7 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/runtime': ^7.17.2
-  '@iconify/react': ^3.2.0
   '@storybook/addon-essentials': ^6.4.19
   '@storybook/addon-postcss': ^2.0.0
   '@storybook/builder-webpack5': ^6.4.19
@@ -43,7 +42,6 @@ specifiers:
   wp-types: ^3.59.1
 
 dependencies:
-  '@iconify/react': 3.2.0
   '@wordpress/api-fetch': 6.1.1
   '@wordpress/block-editor': 8.2.0_f456dfc349ace84b0ea11d9e6e4ef3ab
   '@wordpress/blocks': 11.2.2_react@17.0.2
@@ -1923,10 +1921,6 @@ packages:
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
-
-  /@iconify/react/3.2.0:
-    resolution: {integrity: sha512-nHmPeBGn4KKS8DwDjGrZ9SLpoMmZ+dKZ53s2msBftg6srESMWBUOMW/XBMRjnUjzwQQchguVEhhh59LSSAia/g==}
-    dev: false
 
   /@istanbuljs/load-nyc-config/1.1.0:
     resolution: {integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==}

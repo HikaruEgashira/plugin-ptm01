@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import MainVisual, { Attribute } from "./MainVisual";
+import MainVisual, { Props } from "./MainVisual";
 import { ButtonLink } from "../Button";
 
 export default {
@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof MainVisual> = (args) => (
 	<MainVisual {...args} />
 );
 
-export const props: Attribute = {
+export const props: Props = {
 	title: (
 		<>
 			パフォーマンスに関する混沌とした情報を管理し「言語化・可視化」した新時代の教科書

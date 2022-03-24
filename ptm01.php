@@ -16,7 +16,13 @@ class Bootstrap {
 
 	public function _bootstrap() {
 		add_action( 'init', [ $this, '_register_blocks' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, '_import_cdn'] );
 		// add_action( 'wp_enqueue_scripts', [ $this, '_register_style' ] );
+	}
+
+	public function _import_cdn() {
+		wp_enqueue_style('swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.css');
+		wp_enqueue_script( 'swiper', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array(), '8', true);
 	}
 
 	public function _register_blocks() {

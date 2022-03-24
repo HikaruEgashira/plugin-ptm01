@@ -16,9 +16,9 @@ export const Button: React.FC<ButtonProps> = ({
 	small = false,
 }) => {
 	return (
-		<div
+		<button
 			className={cn(
-				"ptm-py-3 ptm-px-6 ptm-inline-flex ptm-justify-center ptm-items-center ptm-min-w-[10rem] ptm-whitespace-nowrap",
+				"button ptm-py-3 ptm-px-6 ptm-inline-flex ptm-justify-center ptm-items-center ptm-min-w-[10rem] ptm-whitespace-nowrap",
 				{
 					"ptm-text-sm": small,
 					"ptm-rounded": !rounded,
@@ -32,7 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
 			)}
 		>
 			{children}
-		</div>
+		</button>
 	);
 };
 
@@ -50,7 +50,7 @@ export const ButtonLink: React.FC<{
 	children,
 	className,
 }) => (
-	<a href={url} className="ptm-grid">
+	<a href={url} className="ptm-grid link">
 		<Button
 			outline={outline}
 			rounded={rounded}

@@ -14,13 +14,6 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 			<InspectorControls key="setting">
 				<div className="ptm-grid ptm-gap-4 ptm-p-4">
 					<fieldset className="ptm-grid ptm-gap-2">
-						<legend className="blocks-base-control__label">topImageUrl</legend>
-						<TextControl
-							value={attributes.topImageUrl}
-							onChange={(value) => setAttributes({ topImageUrl: value })}
-						/>
-					</fieldset>
-					<fieldset className="ptm-grid ptm-gap-2">
 						<legend className="blocks-base-control__label">
 							featureAImageUrl
 						</legend>
@@ -80,13 +73,6 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 			</InspectorControls>
 
 			<Feature
-				topTitle={
-					<RichText
-						value={attributes.topTitle}
-						onChange={(value) => setAttributes({ topTitle: value })}
-					/>
-				}
-				topImageUrl={attributes.topImageUrl}
 				title={
 					<RichText
 						tagName="span"
