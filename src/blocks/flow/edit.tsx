@@ -4,6 +4,7 @@ import type { BlockEditProps } from "@wordpress/blocks";
 import type { Attribute } from ".";
 import { InspectorControls, RichText } from "@wordpress/block-editor";
 import { TextControl } from "@wordpress/components";
+import { Button, ButtonLink } from "~/stories/Button";
 
 const View: React.FC<BlockEditProps<Attribute>> = ({
 	attributes,
@@ -55,14 +56,15 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 						onChange={(value) => setAttributes({ cardADescription: value })}
 					/>
 				}
-				cardALabel={
-					<RichText
-						value={attributes.cardALabel}
-						onChange={(value) => setAttributes({ cardALabel: value })}
-					/>
-				}
 				cardAImageUrl={attributes.cardAImageUrl}
-				cardAUrl={attributes.cardAUrl}
+				cardAButton={
+					<Button>
+						<RichText
+							value={attributes.cardALabel}
+							onChange={(value) => setAttributes({ cardALabel: value })}
+						/>
+					</Button>
+				}
 				cardBTitle={
 					<RichText
 						value={attributes.cardBTitle}
@@ -75,14 +77,15 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 						onChange={(value) => setAttributes({ cardBDescription: value })}
 					/>
 				}
-				cardBLabel={
-					<RichText
-						value={attributes.cardBLabel}
-						onChange={(value) => setAttributes({ cardBLabel: value })}
-					/>
-				}
 				cardBImageUrl={attributes.cardBImageUrl}
-				cardBUrl={attributes.cardBUrl}
+				cardBButton={
+					<Button>
+						<RichText
+							value={attributes.cardBLabel}
+							onChange={(value) => setAttributes({ cardALabel: value })}
+						/>
+					</Button>
+				}
 			/>
 		</>
 	);

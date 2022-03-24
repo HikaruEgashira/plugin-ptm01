@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import Flow, { Props } from "./Flow";
+import { ButtonLink } from "../Button";
 
 export default {
 	title: "Parts/Flow",
@@ -19,8 +20,11 @@ export const props: Props = {
 			<div>Facebookコミュニティ</div>
 		</>
 	),
-	cardALabel: <>無料</>,
-	cardAUrl: "https://ptm01.com/private/",
+	cardAButton: (
+		<ButtonLink url={"https://ptm01.com/private/"} rounded>
+			無料
+		</ButtonLink>
+	),
 
 	cardBTitle: <>PTM Lab</>,
 	cardBImageUrl: "./undraw_team_collaboration_re_ow29.svg",
@@ -30,8 +34,11 @@ export const props: Props = {
 			<div>コミュニティ</div>
 		</>
 	),
-	cardBLabel: <>月額 990円</>,
-	cardBUrl: "https://ptm01.com/ptm-lab/",
+	cardBButton: (
+		<ButtonLink url={"https://ptm01.com/ptm-lab/"} rounded>
+			月額 990円
+		</ButtonLink>
+	),
 };
 export const Basic = Template.bind({});
 Basic.args = props;

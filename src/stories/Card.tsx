@@ -5,9 +5,8 @@ import { ButtonLink } from "./Button";
 export type CardProps = {
 	title: JSX.Element;
 	description: JSX.Element;
-	bottomLabel: JSX.Element;
 	imageUrl: string;
-	bottomUrl: string;
+	button: JSX.Element;
 	className?: string;
 };
 
@@ -16,8 +15,7 @@ export const Card: React.FC<CardProps> = ({
 	description,
 	imageUrl,
 	className,
-	bottomLabel,
-	bottomUrl,
+	button,
 }) => {
 	return (
 		<div
@@ -36,9 +34,7 @@ export const Card: React.FC<CardProps> = ({
 				<div className="ptm-text-lg ptm-leading-relaxed ptm-text-center">
 					{description}
 				</div>
-				<ButtonLink url={bottomUrl} rounded>
-					{bottomLabel}
-				</ButtonLink>
+				{button}
 			</div>
 		</div>
 	);

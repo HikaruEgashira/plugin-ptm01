@@ -5,14 +5,12 @@ export type Props = {
 	cardATitle: JSX.Element;
 	cardAImageUrl: string;
 	cardADescription: JSX.Element;
-	cardALabel: JSX.Element;
-	cardAUrl: string;
+	cardAButton: JSX.Element;
 
 	cardBTitle: JSX.Element;
 	cardBImageUrl: string;
 	cardBDescription: JSX.Element;
-	cardBLabel: JSX.Element;
-	cardBUrl: string;
+	cardBButton: JSX.Element;
 };
 
 const View: React.FC<Props> = (props) => {
@@ -22,15 +20,13 @@ const View: React.FC<Props> = (props) => {
 				title={props.cardATitle}
 				imageUrl={props.cardAImageUrl}
 				description={props.cardADescription}
-				bottomLabel={props.cardALabel}
-				bottomUrl={props.cardAUrl}
+				button={props.cardAButton}
 			/>
 			<Card
 				title={props.cardBTitle}
 				imageUrl={props.cardBImageUrl}
 				description={props.cardBDescription}
-				bottomLabel={props.cardBLabel}
-				bottomUrl={props.cardBUrl}
+				button={props.cardBButton}
 			/>
 		</div>
 	);

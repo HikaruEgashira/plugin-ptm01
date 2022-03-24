@@ -1,6 +1,7 @@
 import { RichText } from "@wordpress/block-editor";
 import { BlockSaveProps } from "@wordpress/blocks";
 import React from "react";
+import { ButtonLink } from "~/stories/Button";
 import Flow from "~/stories/parts/Flow";
 import { Attribute } from ".";
 
@@ -13,22 +14,24 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 			cardADescription={
 				<RichText.Content tagName="span" value={attributes.cardADescription} />
 			}
-			cardALabel={
-				<RichText.Content tagName="span" value={attributes.cardALabel} />
-			}
 			cardAImageUrl={attributes.cardAImageUrl}
-			cardAUrl={attributes.cardAUrl}
+			cardAButton={
+				<ButtonLink url={attributes.cardAUrl} rounded>
+					<RichText.Content tagName="span" value={attributes.cardALabel} />
+				</ButtonLink>
+			}
 			cardBTitle={
 				<RichText.Content tagName="span" value={attributes.cardBTitle} />
 			}
 			cardBDescription={
 				<RichText.Content tagName="span" value={attributes.cardBDescription} />
 			}
-			cardBLabel={
-				<RichText.Content tagName="span" value={attributes.cardBLabel} />
-			}
 			cardBImageUrl={attributes.cardBImageUrl}
-			cardBUrl={attributes.cardBUrl}
+			cardBButton={
+				<ButtonLink url={attributes.cardBUrl} rounded>
+					<RichText.Content tagName="span" value={attributes.cardBLabel} />
+				</ButtonLink>
+			}
 		/>
 	);
 };

@@ -64,7 +64,7 @@ const View: React.FC<Props> = (props) => {
 						actionUrl={props.featureCActionUrl}
 					/>
 				</div>
-				<div className="ptm-grid ptm-gap-4 ptm-py-8 ptm-px-4 ptm-mx-auto ptm-max-w-2xl ptm-text-xl">
+				<div className="ptm-grid ptm-gap-4 ptm-py-8 ptm-px-4 ptm-mx-auto ptm-max-w-3xl ptm-text-xl">
 					{props.pointA}
 					{props.pointB}
 					{props.pointC}

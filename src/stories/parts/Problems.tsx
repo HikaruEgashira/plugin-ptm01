@@ -73,9 +73,9 @@ const View: React.FC<Props> = (props) => {
 						slim={props.slim}
 					/>
 				</div>
-			</div>
-			<div className="ptm-flex ptm-justify-center">
-				<MdiChevronDown />
+				<div className="ptm-flex ptm-justify-center">
+					<MdiChevronDown />
+				</div>
 			</div>
 			<div className="ptm-flex ptm-justify-center ptm-items-center ptm-py-10 ptm-px-4 ptm-text-2xl ptm-font-bold ptm-text-white ptm-bg-[#0591A0]">
 				{props.message}
