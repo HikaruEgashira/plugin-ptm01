@@ -3,5 +3,7 @@
 pkgs.mkShell {
   buildInputs = [
     pkgs.php
+		pkgs.nodePackages.pnpm
+		pkgs.nodejs
   ];
 }
