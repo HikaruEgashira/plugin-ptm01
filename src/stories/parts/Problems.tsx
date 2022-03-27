@@ -43,8 +43,8 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="ptm-container ptm-py-8 ptm-mx-auto ptm-max-w-5xl ptm-bg-white">
-				<div className="ptm-pb-4 ptm-text-3xl ptm-font-bold ptm-text-center">
+			<div className="ptm-container ptm-mx-auto ptm-max-w-5xl ptm-bg-white">
+				<div className="ptm-py-4 ptm-text-3xl ptm-font-bold ptm-text-center">
 					{props.title}
 				</div>
 				<div className="ptm-grid ptm-grid-cols-1 ptm-w-full ptm-max-w-6xl md:ptm-grid-cols-2">
@@ -73,7 +73,7 @@ const View: React.FC<Props> = (props) => {
 						slim={props.slim}
 					/>
 				</div>
-				<div className="ptm-flex ptm-justify-center">
+				<div className="ptm-grid ptm-place-items-center ptm-pb-4">
 					<MdiChevronDown />
 				</div>
 			</div>
