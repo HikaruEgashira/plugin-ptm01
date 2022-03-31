@@ -36,6 +36,7 @@ export type Props = {
 	problemDDescription: JSX.Element;
 
 	message: JSX.Element;
+	messageUrl: string;
 
 	slim?: boolean;
 };
@@ -77,9 +78,14 @@ const View: React.FC<Props> = (props) => {
 					<MdiChevronDown />
 				</div>
 			</div>
-			<div className="ptm-flex ptm-justify-center ptm-items-center ptm-py-10 ptm-px-4 ptm-text-2xl ptm-font-bold ptm-text-white ptm-bg-[#0591A0]">
-				{props.message}
-			</div>
+			<a
+				href={props.messageUrl}
+				className="ptm-text-2xl ptm-font-bold ptm-text-white ptm-no-underline"
+			>
+				<div className="ptm-grid ptm-place-items-center ptm-py-10 ptm-px-4 ptm-bg-[#0591A0]">
+					{props.message}
+				</div>
+			</a>
 		</>
 	);
 };

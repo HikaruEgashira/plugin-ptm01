@@ -25,6 +25,7 @@ export type Attribute = {
 	problemDDescription: string;
 
 	message: string;
+	messageUrl: string;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -82,6 +83,9 @@ const config: BlockConfiguration<Attribute> = {
 		},
 
 		message: {
+			type: "string",
+		},
+		messageUrl: {
 			type: "string",
 		},
 	},

@@ -42,6 +42,11 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							value={attributes.problemDImageUrl}
 							onChange={(value) => setAttributes({ problemDImageUrl: value })}
 						/>
+						<legend className="blocks-base-control__label">messageUrl</legend>
+						<TextControl
+							value={attributes.messageUrl}
+							onChange={(value) => setAttributes({ messageUrl: value })}
+						/>
 					</fieldset>
 				</div>
 			</InspectorControls>
@@ -112,6 +117,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 						onChange={(value) => setAttributes({ message: value })}
 					/>
 				}
+				messageUrl={attributes.messageUrl}
 			/>
 		</>
 	);

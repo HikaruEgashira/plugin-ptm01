@@ -50,6 +50,7 @@ export const props: Props = {
 		</>
 	),
 	message: <>Performance Treasure Mapはこれらすべてを解決できます!!</>,
+	messageUrl: "https://ptm01.com/ptm",
 };
 export const Basic = Template.bind({});
 Basic.args = props;
