@@ -1,6 +1,7 @@
 import { RichText } from "@wordpress/block-editor";
 import { BlockSaveProps } from "@wordpress/blocks";
 import React from "react";
+import { ButtonLink } from "~/stories/Button";
 import Feature from "~/stories/parts/Feature";
 import { Attribute } from ".";
 
@@ -18,11 +19,10 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 					value={attributes.featureADescription}
 				/>
 			}
-			featureAActoinLabel={
-				<RichText.Content
-					tagName="span"
-					value={attributes.featureAActoinLabel}
-				/>
+			featureAAction={
+				<ButtonLink url={attributes.featureAActionUrl}>
+					<RichText.Content tagName="span" value={attributes.featureAAction} />
+				</ButtonLink>
 			}
 			featureAActionUrl={attributes.featureAActionUrl}
 			featureAImageUrl={attributes.featureAImageUrl}
@@ -35,11 +35,10 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 					value={attributes.featureBDescription}
 				/>
 			}
-			featureBActoinLabel={
-				<RichText.Content
-					tagName="span"
-					value={attributes.featureBActoinLabel}
-				/>
+			featureBAction={
+				<ButtonLink url={attributes.featureBActionUrl}>
+					<RichText.Content tagName="span" value={attributes.featureBAction} />
+				</ButtonLink>
 			}
 			featureBActionUrl={attributes.featureBActionUrl}
 			featureBImageUrl={attributes.featureBImageUrl}
@@ -52,11 +51,10 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 					value={attributes.featureCDescription}
 				/>
 			}
-			featureCActoinLabel={
-				<RichText.Content
-					tagName="span"
-					value={attributes.featureCActoinLabel}
-				/>
+			featureCAction={
+				<ButtonLink url={attributes.featureCActionUrl}>
+					<RichText.Content tagName="span" value={attributes.featureCAction} />
+				</ButtonLink>
 			}
 			featureCActionUrl={attributes.featureCActionUrl}
 			featureCImageUrl={attributes.featureCImageUrl}

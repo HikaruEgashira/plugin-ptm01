@@ -12,19 +12,19 @@ export type Attribute = {
 	featureATitle: string;
 	featureAImageUrl: string;
 	featureADescription: string;
-	featureAActoinLabel: string;
+	featureAAction: string;
 	featureAActionUrl: string;
 
 	featureBTitle: string;
 	featureBImageUrl: string;
 	featureBDescription: string;
-	featureBActoinLabel: string;
+	featureBAction: string;
 	featureBActionUrl: string;
 
 	featureCTitle: string;
 	featureCImageUrl: string;
 	featureCDescription: string;
-	featureCActoinLabel: string;
+	featureCAction: string;
 	featureCActionUrl: string;
 
 	pointA: string;
@@ -58,7 +58,7 @@ const config: BlockConfiguration<Attribute> = {
 		featureADescription: {
 			type: "string",
 		},
-		featureAActoinLabel: {
+		featureAAction: {
 			type: "string",
 		},
 		featureAActionUrl: {
@@ -74,7 +74,7 @@ const config: BlockConfiguration<Attribute> = {
 		featureBDescription: {
 			type: "string",
 		},
-		featureBActoinLabel: {
+		featureBAction: {
 			type: "string",
 		},
 		featureBActionUrl: {
@@ -90,7 +90,7 @@ const config: BlockConfiguration<Attribute> = {
 		featureCDescription: {
 			type: "string",
 		},
-		featureCActoinLabel: {
+		featureCAction: {
 			type: "string",
 		},
 		featureCActionUrl: {

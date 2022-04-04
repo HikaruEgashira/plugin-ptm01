@@ -8,19 +8,19 @@ export type Props = {
 	featureATitle: JSX.Element;
 	featureAImageUrl: string;
 	featureADescription: JSX.Element;
-	featureAActoinLabel: JSX.Element;
+	featureAAction: JSX.Element;
 	featureAActionUrl: string;
 
 	featureBTitle: JSX.Element;
 	featureBImageUrl: string;
 	featureBDescription: JSX.Element;
-	featureBActoinLabel: JSX.Element;
+	featureBAction: JSX.Element;
 	featureBActionUrl: string;
 
 	featureCTitle: JSX.Element;
 	featureCImageUrl: string;
 	featureCDescription: JSX.Element;
-	featureCActoinLabel: JSX.Element;
+	featureCAction: JSX.Element;
 	featureCActionUrl: string;
 
 	pointA: JSX.Element;
@@ -44,24 +44,21 @@ const View: React.FC<Props> = (props) => {
 						title={props.featureATitle}
 						imageUrl={props.featureAImageUrl}
 						description={props.featureADescription}
-						actionLabel={props.featureAActoinLabel}
-						actionUrl={props.featureAActionUrl}
+						action={props.featureAAction}
 					/>
 					<FeatureBox
 						className="ptm-w-full lg:ptm-w-1/3"
 						title={props.featureBTitle}
 						imageUrl={props.featureBImageUrl}
 						description={props.featureBDescription}
-						actionLabel={props.featureBActoinLabel}
-						actionUrl={props.featureBActionUrl}
+						action={props.featureBAction}
 					/>
 					<FeatureBox
 						className="ptm-w-full lg:ptm-w-1/3"
 						title={props.featureCTitle}
 						imageUrl={props.featureCImageUrl}
 						description={props.featureCDescription}
-						actionLabel={props.featureCActoinLabel}
-						actionUrl={props.featureCActionUrl}
+						action={props.featureCAction}
 					/>
 				</div>
 				<div className="ptm-grid ptm-gap-4 ptm-py-8 ptm-px-4 ptm-mx-auto ptm-max-w-3xl ptm-text-xl">

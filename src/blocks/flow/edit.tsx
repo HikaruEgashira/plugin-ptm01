@@ -82,7 +82,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					<Button>
 						<RichText
 							value={attributes.cardBLabel}
-							onChange={(value) => setAttributes({ cardALabel: value })}
+							onChange={(value) => setAttributes({ cardBLabel: value })}
 						/>
 					</Button>
 				}

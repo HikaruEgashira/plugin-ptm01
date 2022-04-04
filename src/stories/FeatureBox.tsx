@@ -6,8 +6,7 @@ export type FeatureBoxProps = {
 	title: JSX.Element;
 	imageUrl: string;
 	description: JSX.Element;
-	actionLabel: JSX.Element;
-	actionUrl: string;
+	action: JSX.Element;
 	className?: string;
 };
 
@@ -15,8 +14,7 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 	title,
 	imageUrl,
 	description,
-	actionLabel,
-	actionUrl,
+	action,
 	className,
 }) => {
 	return (
@@ -35,9 +33,7 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 			<div className="ptm-grow ptm-w-full ptm-leading-normal ptm-text-left">
 				{description}
 			</div>
-			<ButtonLink url={actionUrl} small>
-				{actionLabel}
-			</ButtonLink>
+			{action}
 		</div>
 	);
 };

@@ -2,6 +2,7 @@ import { InspectorControls, RichText } from "@wordpress/block-editor";
 import { BlockEditProps } from "@wordpress/blocks";
 import { TextControl } from "@wordpress/components";
 import React from "react";
+import { Button } from "~/stories/Button";
 import Feature from "~/stories/parts/Feature";
 import { Attribute } from ".";
 
@@ -102,12 +103,14 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					/>
 				}
 				featureAImageUrl={attributes.featureAImageUrl}
-				featureAActoinLabel={
-					<RichText
-						tagName="span"
-						value={attributes.featureAActoinLabel}
-						onChange={(value) => setAttributes({ featureAActoinLabel: value })}
-					/>
+				featureAAction={
+					<Button>
+						<RichText
+							tagName="span"
+							value={attributes.featureAAction}
+							onChange={(value) => setAttributes({ featureAAction: value })}
+						/>
+					</Button>
 				}
 				featureAActionUrl={attributes.featureAActionUrl}
 				featureBTitle={
@@ -125,12 +128,14 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					/>
 				}
 				featureBImageUrl={attributes.featureBImageUrl}
-				featureBActoinLabel={
-					<RichText
-						tagName="span"
-						value={attributes.featureBActoinLabel}
-						onChange={(value) => setAttributes({ featureBActoinLabel: value })}
-					/>
+				featureBAction={
+					<Button>
+						<RichText
+							tagName="span"
+							value={attributes.featureBAction}
+							onChange={(value) => setAttributes({ featureBAction: value })}
+						/>
+					</Button>
 				}
 				featureBActionUrl={attributes.featureBActionUrl}
 				featureCTitle={
@@ -148,12 +153,14 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 					/>
 				}
 				featureCImageUrl={attributes.featureCImageUrl}
-				featureCActoinLabel={
-					<RichText
-						tagName="span"
-						value={attributes.featureCActoinLabel}
-						onChange={(value) => setAttributes({ featureCActoinLabel: value })}
-					/>
+				featureCAction={
+					<Button>
+						<RichText
+							tagName="span"
+							value={attributes.featureCAction}
+							onChange={(value) => setAttributes({ featureCAction: value })}
+						/>
+					</Button>
 				}
 				featureCActionUrl={attributes.featureCActionUrl}
 				pointA={
