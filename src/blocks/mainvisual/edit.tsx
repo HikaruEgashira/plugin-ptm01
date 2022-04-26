@@ -26,6 +26,9 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 	const onChangeRUrl = (newText: string) => {
 		setAttributes({ rightButtonUrl: newText });
 	};
+	const onMovieUrl = (newText: string) => {
+		setAttributes({ movieUrl: newText });
+	};
 
 	return (
 		<>
@@ -46,6 +49,8 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 							value={attributes.rightButtonUrl}
 							onChange={onChangeRUrl}
 						/>
+						<legend className="blocks-base-control__label">movieUrl</legend>
+						<TextControl value={attributes.movieUrl} onChange={onMovieUrl} />
 					</fieldset>
 				</div>
 			</InspectorControls>
@@ -68,6 +73,7 @@ const View: React.FC<BlockEditProps<Attribute>> = ({
 						/>
 					</Button>
 				}
+				movieUrl={attributes.movieUrl}
 			/>
 		</>
 	);

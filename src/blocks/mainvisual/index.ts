@@ -11,6 +11,7 @@ export type Attribute = {
 	leftButtonUrl: string;
 	rightButtonLabel: string;
 	rightButtonUrl: string;
+	movieUrl: string;
 };
 
 const config: BlockConfiguration<Attribute> = {
@@ -36,6 +37,9 @@ const config: BlockConfiguration<Attribute> = {
 			type: "string",
 		},
 		rightButtonUrl: {
+			type: "string",
+		},
+		movieUrl: {
 			type: "string",
 		},
 	},

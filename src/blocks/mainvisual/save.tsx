@@ -23,6 +23,7 @@ const View: React.FC<BlockSaveProps<Attribute>> = ({ attributes }) => {
 					/>
 				</ButtonLink>
 			}
+			movieUrl={attributes.movieUrl}
 		/>
 	);
 };
