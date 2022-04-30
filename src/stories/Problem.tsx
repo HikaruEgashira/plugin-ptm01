@@ -17,7 +17,9 @@ export const Problem: React.FC<ProblemProps> = ({
 	slim,
 }) => {
 	return (
-		<div className={cn("ptm-p-4 ptm-pt-8", className)}>
+		<div
+			className={cn("ptm-py-4 ptm-px-8 ptm-pt-8 ptm-tracking-wide", className)}
+		>
 			<div className="ptm-relative ptm-p-2 ptm-h-48 ptm-bg-[#E5F3F5]">
 				<div className="ptm-absolute ptm-top-[-.75rem] ptm-py-1 ptm-px-2 ptm-w-20 ptm-text-sm ptm-text-center ptm-text-white ptm-bg-[#05909F] ptm-rounded-full">
 					{title}
@@ -30,7 +32,9 @@ export const Problem: React.FC<ProblemProps> = ({
 					src={imageUrl}
 				/>
 			</div>
-			<div className="ptm-pt-2 ptm-leading-relaxed">{description}</div>
+			<div className="ptm-pt-2 ptm-leading-relaxed ptm-text-[#555659]">
+				{description}
+			</div>
 		</div>
 	);
 };

@@ -11,4 +11,14 @@ export const parameters = {
 	},
 };
 
-export const decorators = [(Story) => <Story />];
+export const decorators = [
+	(Story) => (
+		<div
+			style={{
+				maxWidth: "860px",
+			}}
+		>
+			<Story />
+		</div>
+	),
+];

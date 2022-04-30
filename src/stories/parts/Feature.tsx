@@ -30,9 +30,9 @@ export type Props = {
 
 const View: React.FC<Props> = (props) => {
 	return (
-		<div className="ptm-bg-[#F3F7F8]">
+		<div className="ptm-tracking-wide ptm-bg-[#F3F7F8]">
 			<div className="ptm-container ptm-pb-8 ptm-mx-auto">
-				<div className="ptm-py-4 ptm-text-3xl ptm-font-bold ptm-text-center">
+				<div className="ptm-pt-20 ptm-pb-4 ptm-text-3xl ptm-font-bold ptm-text-center">
 					{props.title}
 				</div>
 				<div className="ptm-pb-8 ptm-text-xl ptm-font-bold ptm-text-center">
@@ -61,7 +61,7 @@ const View: React.FC<Props> = (props) => {
 						action={props.featureCAction}
 					/>
 				</div>
-				<div className="ptm-grid ptm-gap-4 ptm-py-8 ptm-px-4 ptm-mx-auto ptm-max-w-3xl ptm-text-xl">
+				<div className="ptm-grid ptm-gap-4 ptm-p-4 ptm-mx-auto ptm-max-w-3xl ptm-text-xl">
 					{props.pointA}
 					{props.pointB}
 					{props.pointC}

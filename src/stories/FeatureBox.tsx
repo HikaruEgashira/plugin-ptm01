@@ -1,6 +1,5 @@
 import cn from "classnames";
 import React from "react";
-import { ButtonLink } from "./Button";
 
 export type FeatureBoxProps = {
 	title: JSX.Element;
@@ -20,7 +19,7 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 	return (
 		<div
 			className={cn(
-				"ptm-flex ptm-flex-col ptm-items-center ptm-gap-4 ptm-p-4",
+				"ptm-flex ptm-flex-col ptm-items-center ptm-gap-4 ptm-p-4 ptm-tracking-wide",
 				className
 			)}
 		>
@@ -30,7 +29,7 @@ export const FeatureBox: React.FC<FeatureBoxProps> = ({
 				alt="featureimage"
 				src={imageUrl}
 			/>
-			<div className="ptm-grow ptm-w-full ptm-leading-normal ptm-text-left">
+			<div className="ptm-grow ptm-w-full ptm-leading-relaxed ptm-text-left ptm-text-[#555659]">
 				{description}
 			</div>
 			{action}

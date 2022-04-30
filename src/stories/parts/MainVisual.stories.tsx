@@ -29,6 +29,7 @@ export const props: Props = {
 			オンラインストア
 		</ButtonLink>
 	),
+	movieUrl: "https://www.youtube.com/embed/q7s81feOwmM?controls=0"
 };
 export const Basic = Template.bind({});
 Basic.args = props;

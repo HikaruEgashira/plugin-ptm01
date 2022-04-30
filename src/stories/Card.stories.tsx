@@ -25,5 +25,5 @@ Basic.args = {
 			<div>Facebookコミュニティ</div>
 		</>
 	),
-	bottomLabel: <>無料</>,
+	button: <>Join</>,
 };

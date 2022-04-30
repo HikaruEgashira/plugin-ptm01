@@ -44,8 +44,8 @@ export type Props = {
 const View: React.FC<Props> = (props) => {
 	return (
 		<>
-			<div className="ptm-container ptm-mx-auto ptm-max-w-5xl ptm-bg-white">
-				<div className="ptm-py-4 ptm-text-3xl ptm-font-bold ptm-text-center">
+			<div className="ptm-container ptm-mx-auto ptm-max-w-5xl ptm-tracking-wide ptm-bg-white">
+				<div className="ptm-pt-20 ptm-pb-4 ptm-text-3xl ptm-font-bold ptm-text-center">
 					{props.title}
 				</div>
 				<div className="ptm-grid ptm-grid-cols-1 ptm-w-full ptm-max-w-6xl md:ptm-grid-cols-2">
@@ -82,7 +82,7 @@ const View: React.FC<Props> = (props) => {
 				href={props.messageUrl}
 				className="ptm-text-2xl ptm-font-bold ptm-text-white ptm-no-underline"
 			>
-				<div className="ptm-grid ptm-place-items-center ptm-py-10 ptm-px-4 ptm-bg-[#0591A0]">
+				<div className="ptm-grid ptm-place-items-center ptm-py-10 ptm-px-4 ptm-tracking-wider ptm-bg-[#0591A0]">
 					{props.message}
 				</div>
 			</a>

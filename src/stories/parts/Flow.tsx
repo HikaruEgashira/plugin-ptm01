@@ -15,7 +15,7 @@ export type Props = {
 
 const View: React.FC<Props> = (props) => {
 	return (
-		<div className="ptm-container ptm-grid ptm-gap-4 ptm-py-8 ptm-px-4 ptm-mx-auto ptm-max-w-5xl ptm-bg-white md:ptm-grid-cols-2">
+		<div className="ptm-container ptm-grid ptm-gap-4 ptm-p-8 ptm-px-4 ptm-mx-auto ptm-max-w-5xl ptm-tracking-wide ptm-bg-white md:ptm-grid-cols-2">
 			<Card
 				title={props.cardATitle}
 				imageUrl={props.cardAImageUrl}

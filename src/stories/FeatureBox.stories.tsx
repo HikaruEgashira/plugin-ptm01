@@ -23,7 +23,6 @@ export const Basic = Template.bind({});
 Basic.args = {
 	title: <>マップ</>,
 	description: <>マップを作成する</>,
-	actionLabel: <>マップを作成する</>,
-	actionUrl: "/map",
+	action: <>作成する</>,
 	imageUrl: "./undraw_people_re_8spw.svg",
 };
