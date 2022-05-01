@@ -18,3 +18,9 @@ pnpm start # open http://localhost:8888
 pnpm build
 pnpm plugin-zip # ptm01.zip
 ```
+
+## generate scaffold
+
+```bash
+pnpx scaffdog generate
+```
